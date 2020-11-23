@@ -1,0 +1,501 @@
+[2020-11-22 14:36:35 EST] precision -shell -file run.do -fileargs "design.sv" 
+precision: Setting MGC_HOME to /usr/share/precision/Mgc_home ...
+precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Source)  -- 3.13.0-71-generic -- x86_64 
+//  Precision RTL Synthesis 64-bit 2019.2.0.9 (Production Release) Tue Dec  3 00:11:06 PST 2019
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2019, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux runner@dff2001bfd3c #114-Ubuntu SMP Tue Dec 1 02:34:22 UTC 2015 3.13.0-71-generic x86_64
+//  
+//  Start time Sun Nov 22 14:36:36 2020
+# -------------------------------------------------
+# Info: [9569]: Logging session transcript to file /home/runner/precision.log
+# Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
+# Info: [9577]: Input directory: /home/runner
+# Info: [9572]: Moving session transcript to file /home/runner/precision.log
+# Info: [9558]: Created project /home/runner/project_1.psp in folder /home/runner.
+# Info: [9531]: Created directory: /home/runner/impl_1.
+# Info: [9557]: Created implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [9578]: The Results Directory has been set to: /home/runner/impl_1/
+# Info: [9569]: Logging project transcript to file /home/runner/impl_1/precision.log
+# Info: [9569]: Logging suppressed messages transcript to file /home/runner/impl_1/precision.log.suppressed
+# Info: [9552]: Activated implementation impl_1 in project /home/runner/project_1.psp.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15301]: Setting up the design to use synthesis library "xca7.syn"
+# Info: [585]: The global max fanout is currently set to 10000 for Xilinx - ARTIX-7.
+# Info: [15327]: Setting Part to: "7A100TCSG324".
+# Info: [15328]: Setting Process to: "1".
+# Info: [7513]: The default input to Vivado place and route has been set to "Verilog".
+# Info: [7512]: The place and route tool for current technology is Vivado.
+# Info: [3022]: Reading file: /home/runner/impl_1/synlib/xca7.syn.
+# Info: [644]: Loading library initialization file /usr/share/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2019b.10
+# Info: [42003]: Starting analysis of files in library "work"
+# Info: [41002]: Analyzing input file "/home/runner/design.sv" ...
+# Info: [669]: Top module of the design is set to: redux.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:15:56
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2019b.10
+# Info: [40000]: Last compiled on Nov 25 2019 19:43:59
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module redux: Pre-processing...
+# Info: [44523]: Root Module redux: Compiling...
+# Info: [44846]: Rebalanced Expression Tree...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 8.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [15333]: Doing rtl optimizations.
+# Info: [1081]: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+# Info: Constraints: Precision Generated Clock Domains:
+# Info: 	Domain Name: VirtualClock_PS		Clock Name: VirtualClock
+# Info: [670]: Finished compiling design.
+# Info: [667]: Current working directory: /home/runner/impl_1.
+# Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
+# Info: [15002]: Optimizing design view:.work.redux.INTERFACE
+# Info: [15002]: Optimizing design view:.work.redux.INTERFACE
+# Info: [8010]: Gated clock transformations: Begin...
+# Info: [8010]: Gated clock transformations: End...
+# Info: [1081]: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+# Info: Constraints: Precision Generated Clock Domains:
+# Info: 	Domain Name: VirtualClock_PS		Clock Name: VirtualClock
+# Info: [3027]: Writing file: /home/runner/impl_1/redux.edf.
+# Info: [3027]: Writing file: /home/runner/impl_1/redux.xdc.
+# Info: -- Writing file /home/runner/impl_1/redux.tcl
+# Info: [3027]: Writing file: /home/runner/impl_1/redux.v.
+# Info: -- Writing file /home/runner/impl_1/redux.tcl
+# Info: [670]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.5 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.6 s secs.
+# Info: /home/runner/impl_1/precision_tech.sdc
+# Info: [3027]: Writing file: /home/runner/precision.v.
+# Info: [3027]: Writing file: /home/runner/precision.xdc.
+# Info: -- Writing file /home/runner/impl_1/redux.tcl
+# Info: Info, Command 'auto_write' finished successfully
+# Info: Num  File Type  Path
+# Info: ------------------------------------------------------------
+# Info: 0               /home/runner/impl_1/redux_area.rep
+# Info: 1               /home/runner/impl_1/redux_con_rep.sdc
+# Info: 2               /home/runner/impl_1/redux_tech_con_rep.sdc
+# Info: 3               /home/runner/impl_1/redux_fsm.rep
+# Info: 4               /home/runner/impl_1/redux_env.htm
+# Info: 5               /home/runner/impl_1/redux.edf
+# Info: 6               /home/runner/impl_1/redux.v
+# Info: 7               /home/runner/impl_1/redux.xdc
+# Info: 8               /home/runner/impl_1/redux.tcl
+# Info: ***************************************************************
+# Info: Device Utilization for 7A100TCSG324
+# Info: ***************************************************************
+# Info: Resource                          Used    Avail   Utilization
+# Info: ---------------------------------------------------------------
+# Info: IOs                               40      210      19.05%
+# Info: Global Buffers                    0       32        0.00%
+# Info: LUTs                              27      63400     0.04%
+# Info: CLB Slices                        0       15850     0.00%
+# Info: Dffs or Latches                   0       126800    0.00%
+# Info: Block RAMs                        0       135       0.00%
+# Info: DSP48E1s                          0       240       0.00%
+# Info: ---------------------------------------------------------------
+# Info: *********************************************************
+# Info: Library: work    Cell: redux    View: INTERFACE
+# Info: *********************************************************
+# Info:  Number of ports :                           40
+# Info:  Number of nets :                           136
+# Info:  Number of instances :                      104
+# Info:  Number of references to this view :          0
+# Info: Total accumulated area :
+# Info:  Number of LUTs :                            27
+# Info:  Number of LUTs with LUTNM/HLUTNM :          16
+# Info:  Number of MUX CARRYs :                      17
+# Info:  Number of accumulated instances :          104
+# Info: *****************************
+# Info:  IO Register Mapping Report
+# Info: *****************************
+# Info: Design: work.redux.INTERFACE
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | Port          | Direction |   INFF   |  OUTFF   |  TRIFF   |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(31)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(30)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(29)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(28)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(27)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(26)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(25)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(24)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(23)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(22)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(21)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(20)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(19)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(18)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(17)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(16)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(15)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(14)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(13)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(12)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(11)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(10)    | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(9)     | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(8)     | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(7)     | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(6)     | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(5)     | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(4)     | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(3)     | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(2)     | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(1)     | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_in(0)     | Input     |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_out(7)    | Output    |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_out(6)    | Output    |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_out(5)    | Output    |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_out(4)    | Output    |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_out(3)    | Output    |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_out(2)    | Output    |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_out(1)    | Output    |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: | pix_out(0)    | Output    |          |          |          |
+# Info: +---------------+-----------+----------+----------+----------+
+# Info: Total registers mapped: 0
+# Info: -- POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: -- Device: Xilinx - ARTIX-7 : 7A100TCSG324 : 1
+# Info: -- CTE report timing..
+# Info:                   CTE Path Report
+# Info: No paths returned.
+# Info: End CTE Analysis ..... CPU Time Used: 0 sec.
+# Info: //
+# Info: // Verilog description for cell redux,
+# Info: // Sun Nov 22 14:36:40 2020
+# Info: //
+# Info: // Precision RTL Synthesis, 64-bit 2019.2.0.9//
+# Info: module redux ( pix_in, pix_out ) ;
+# Info:     input [31:0]pix_in ;
+# Info:     output [7:0]pix_out ;
+# Info:     wire [7:0]pix_out_1_0;
+# Info:     wire nx8473z1, nx8473z4, nx8473z2, nx8474z2, nx8475z2, nx8476z2, nx8477z2,
+# Info:          nx8478z2, nx8479z2, nx8480z2, nx8481z2, nx51679z3, nx50045z1, nx16719z1,
+# Info:          nx50044z1, nx16720z1, nx50043z1, nx50043z2, nx16721z1, nx50042z1,
+# Info:          nx50042z2, nx16722z1, nx50041z1, nx50041z2, nx16723z1, nx50040z1,
+# Info:          nx50040z2, nx16724z1, nx50039z1, nx50039z2, nx16725z1, nx50038z1,
+# Info:          nx50038z2, nx50036z3, nx50036z1, nx62787z1, nx8474z1, nx8475z1,
+# Info:          nx8476z1, nx8477z1, nx8478z1, nx8479z1, nx8480z1, nx8481z1, nx51679z1;
+# Info:     wire [31:0]pix_in_int;
+# Info:     wire nx51679z2, nx8481z3, nx50036z2, nx8480z3, nx8479z3, nx8478z3, nx8477z3,
+# Info:          nx8476z3, nx8475z3, nx8474z3, nx8473z3;
+# Info:     GND ps_gnd (.G (nx8473z1)) ;
+# Info:     VCC ps_vcc (.P (nx8473z4)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_0" *)
+# Info:     LUT4 slut_0_0 (.O (nx50045z1), .I0 (pix_in_int[16]), .I1 (pix_in_int[24]), .I2 (
+# Info:          pix_in_int[0]), .I3 (nx8473z1)) ;
+# Info:          defparam slut_0_0.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_0" *)
+# Info:     LUT3 clut_0_0 (.O (nx16719z1), .I0 (pix_in_int[16]), .I1 (pix_in_int[24]), .I2 (
+# Info:          pix_in_int[0])) ;
+# Info:          defparam clut_0_0.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_0 (.O (nx8473z2), .CI (nx8473z1), .LI (nx50045z1)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_1" *)
+# Info:     LUT4 slut_0_1 (.O (nx50044z1), .I0 (pix_in_int[17]), .I1 (pix_in_int[25]), .I2 (
+# Info:          pix_in_int[1]), .I3 (nx16719z1)) ;
+# Info:          defparam slut_0_1.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_1" *)
+# Info:     LUT3 clut_0_1 (.O (nx16720z1), .I0 (pix_in_int[17]), .I1 (pix_in_int[25]), .I2 (
+# Info:          pix_in_int[1])) ;
+# Info:          defparam clut_0_1.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_1 (.O (nx8474z2), .CI (nx8473z1), .LI (nx50044z1)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_2" *)
+# Info:     LUT4 slut_0_2 (.O (nx50043z2), .I0 (pix_in_int[18]), .I1 (pix_in_int[26]), .I2 (
+# Info:          pix_in_int[2]), .I3 (nx16720z1)) ;
+# Info:          defparam slut_0_2.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_2" *)
+# Info:     LUT3 clut_0_2 (.O (nx16721z1), .I0 (pix_in_int[18]), .I1 (pix_in_int[26]), .I2 (
+# Info:          pix_in_int[2])) ;
+# Info:          defparam clut_0_2.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_2 (.O (nx8475z2), .CI (nx50043z1), .LI (nx50043z2)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_3" *)
+# Info:     LUT4 slut_0_3 (.O (nx50042z2), .I0 (pix_in_int[19]), .I1 (pix_in_int[27]), .I2 (
+# Info:          pix_in_int[3]), .I3 (nx16721z1)) ;
+# Info:          defparam slut_0_3.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_3" *)
+# Info:     LUT3 clut_0_3 (.O (nx16722z1), .I0 (pix_in_int[19]), .I1 (pix_in_int[27]), .I2 (
+# Info:          pix_in_int[3])) ;
+# Info:          defparam clut_0_3.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_3 (.O (nx8476z2), .CI (nx50042z1), .LI (nx50042z2)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_4" *)
+# Info:     LUT4 slut_0_4 (.O (nx50041z2), .I0 (pix_in_int[20]), .I1 (pix_in_int[28]), .I2 (
+# Info:          pix_in_int[4]), .I3 (nx16722z1)) ;
+# Info:          defparam slut_0_4.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_4" *)
+# Info:     LUT3 clut_0_4 (.O (nx16723z1), .I0 (pix_in_int[20]), .I1 (pix_in_int[28]), .I2 (
+# Info:          pix_in_int[4])) ;
+# Info:          defparam clut_0_4.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_4 (.O (nx8477z2), .CI (nx50041z1), .LI (nx50041z2)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_5" *)
+# Info:     LUT4 slut_0_5 (.O (nx50040z2), .I0 (pix_in_int[21]), .I1 (pix_in_int[29]), .I2 (
+# Info:          pix_in_int[5]), .I3 (nx16723z1)) ;
+# Info:          defparam slut_0_5.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_5" *)
+# Info:     LUT3 clut_0_5 (.O (nx16724z1), .I0 (pix_in_int[21]), .I1 (pix_in_int[29]), .I2 (
+# Info:          pix_in_int[5])) ;
+# Info:          defparam clut_0_5.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_5 (.O (nx8478z2), .CI (nx50040z1), .LI (nx50040z2)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_6" *)
+# Info:     LUT4 slut_0_6 (.O (nx50039z2), .I0 (pix_in_int[22]), .I1 (pix_in_int[30]), .I2 (
+# Info:          pix_in_int[6]), .I3 (nx16724z1)) ;
+# Info:          defparam slut_0_6.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_6" *)
+# Info:     LUT3 clut_0_6 (.O (nx16725z1), .I0 (pix_in_int[22]), .I1 (pix_in_int[30]), .I2 (
+# Info:          pix_in_int[6])) ;
+# Info:          defparam clut_0_6.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_6 (.O (nx8479z2), .CI (nx50039z1), .LI (nx50039z2)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_7" *)
+# Info:     LUT4 slut_0_7 (.O (nx50038z2), .I0 (pix_in_int[23]), .I1 (pix_in_int[31]), .I2 (
+# Info:          pix_in_int[7]), .I3 (nx16725z1)) ;
+# Info:          defparam slut_0_7.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_slut_0_7" *)
+# Info:     LUT3 clut_0_7 (.O (nx50036z3), .I0 (pix_in_int[23]), .I1 (pix_in_int[31]), .I2 (
+# Info:          pix_in_int[7])) ;
+# Info:          defparam clut_0_7.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_7 (.O (nx8480z2), .CI (nx50038z1), .LI (nx50038z2)) ;
+# Info:     XORCY xorcy_0_9 (.O (nx8481z2), .CI (nx50036z1), .LI (nx50036z2)) ;
+# Info:     XORCY xorcy_0_9_1_0 (.O (nx51679z3), .CI (nx62787z1), .LI (nx8473z1)) ;
+# Info:     XORCY xorcy_2 (.O (pix_out_1_0[0]), .CI (nx8475z1), .LI (nx8475z3)) ;
+# Info:     XORCY xorcy_3 (.O (pix_out_1_0[1]), .CI (nx8476z1), .LI (nx8476z3)) ;
+# Info:     XORCY xorcy_4 (.O (pix_out_1_0[2]), .CI (nx8477z1), .LI (nx8477z3)) ;
+# Info:     XORCY xorcy_5 (.O (pix_out_1_0[3]), .CI (nx8478z1), .LI (nx8478z3)) ;
+# Info:     XORCY xorcy_6 (.O (pix_out_1_0[4]), .CI (nx8479z1), .LI (nx8479z3)) ;
+# Info:     XORCY xorcy_7 (.O (pix_out_1_0[5]), .CI (nx8480z1), .LI (nx8480z3)) ;
+# Info:     XORCY xorcy_8 (.O (pix_out_1_0[6]), .CI (nx8481z1), .LI (nx8481z3)) ;
+# Info:     XORCY xorcy_9 (.O (pix_out_1_0[7]), .CI (nx51679z1), .LI (nx51679z2)) ;
+# Info:     OBUF \pix_out_obuf(0)  (.O (pix_out[0]), .I (pix_out_1_0[0])) ;
+# Info:     OBUF \pix_out_obuf(1)  (.O (pix_out[1]), .I (pix_out_1_0[1])) ;
+# Info:     OBUF \pix_out_obuf(2)  (.O (pix_out[2]), .I (pix_out_1_0[2])) ;
+# Info:     OBUF \pix_out_obuf(3)  (.O (pix_out[3]), .I (pix_out_1_0[3])) ;
+# Info:     OBUF \pix_out_obuf(4)  (.O (pix_out[4]), .I (pix_out_1_0[4])) ;
+# Info:     OBUF \pix_out_obuf(5)  (.O (pix_out[5]), .I (pix_out_1_0[5])) ;
+# Info:     OBUF \pix_out_obuf(6)  (.O (pix_out[6]), .I (pix_out_1_0[6])) ;
+# Info:     OBUF \pix_out_obuf(7)  (.O (pix_out[7]), .I (pix_out_1_0[7])) ;
+# Info:     IBUF \pix_in_ibuf(0)  (.O (pix_in_int[0]), .I (pix_in[0])) ;
+# Info:     IBUF \pix_in_ibuf(1)  (.O (pix_in_int[1]), .I (pix_in[1])) ;
+# Info:     IBUF \pix_in_ibuf(2)  (.O (pix_in_int[2]), .I (pix_in[2])) ;
+# Info:     IBUF \pix_in_ibuf(3)  (.O (pix_in_int[3]), .I (pix_in[3])) ;
+# Info:     IBUF \pix_in_ibuf(4)  (.O (pix_in_int[4]), .I (pix_in[4])) ;
+# Info:     IBUF \pix_in_ibuf(5)  (.O (pix_in_int[5]), .I (pix_in[5])) ;
+# Info:     IBUF \pix_in_ibuf(6)  (.O (pix_in_int[6]), .I (pix_in[6])) ;
+# Info:     IBUF \pix_in_ibuf(7)  (.O (pix_in_int[7]), .I (pix_in[7])) ;
+# Info:     IBUF \pix_in_ibuf(8)  (.O (pix_in_int[8]), .I (pix_in[8])) ;
+# Info:     IBUF \pix_in_ibuf(9)  (.O (pix_in_int[9]), .I (pix_in[9])) ;
+# Info:     IBUF \pix_in_ibuf(10)  (.O (pix_in_int[10]), .I (pix_in[10])) ;
+# Info:     IBUF \pix_in_ibuf(11)  (.O (pix_in_int[11]), .I (pix_in[11])) ;
+# Info:     IBUF \pix_in_ibuf(12)  (.O (pix_in_int[12]), .I (pix_in[12])) ;
+# Info:     IBUF \pix_in_ibuf(13)  (.O (pix_in_int[13]), .I (pix_in[13])) ;
+# Info:     IBUF \pix_in_ibuf(14)  (.O (pix_in_int[14]), .I (pix_in[14])) ;
+# Info:     IBUF \pix_in_ibuf(15)  (.O (pix_in_int[15]), .I (pix_in[15])) ;
+# Info:     IBUF \pix_in_ibuf(16)  (.O (pix_in_int[16]), .I (pix_in[16])) ;
+# Info:     IBUF \pix_in_ibuf(17)  (.O (pix_in_int[17]), .I (pix_in[17])) ;
+# Info:     IBUF \pix_in_ibuf(18)  (.O (pix_in_int[18]), .I (pix_in[18])) ;
+# Info:     IBUF \pix_in_ibuf(19)  (.O (pix_in_int[19]), .I (pix_in[19])) ;
+# Info:     IBUF \pix_in_ibuf(20)  (.O (pix_in_int[20]), .I (pix_in[20])) ;
+# Info:     IBUF \pix_in_ibuf(21)  (.O (pix_in_int[21]), .I (pix_in[21])) ;
+# Info:     IBUF \pix_in_ibuf(22)  (.O (pix_in_int[22]), .I (pix_in[22])) ;
+# Info:     IBUF \pix_in_ibuf(23)  (.O (pix_in_int[23]), .I (pix_in[23])) ;
+# Info:     IBUF \pix_in_ibuf(24)  (.O (pix_in_int[24]), .I (pix_in[24])) ;
+# Info:     IBUF \pix_in_ibuf(25)  (.O (pix_in_int[25]), .I (pix_in[25])) ;
+# Info:     IBUF \pix_in_ibuf(26)  (.O (pix_in_int[26]), .I (pix_in[26])) ;
+# Info:     IBUF \pix_in_ibuf(27)  (.O (pix_in_int[27]), .I (pix_in[27])) ;
+# Info:     IBUF \pix_in_ibuf(28)  (.O (pix_in_int[28]), .I (pix_in[28])) ;
+# Info:     IBUF \pix_in_ibuf(29)  (.O (pix_in_int[29]), .I (pix_in[29])) ;
+# Info:     IBUF \pix_in_ibuf(30)  (.O (pix_in_int[30]), .I (pix_in[30])) ;
+# Info:     IBUF \pix_in_ibuf(31)  (.O (pix_in_int[31]), .I (pix_in[31])) ;
+# Info:     LUT3 ix51679z1419 (.O (nx51679z2), .I0 (nx8473z1), .I1 (nx8473z4), .I2 (
+# Info:          nx51679z3)) ;
+# Info:          defparam ix51679z1419.INIT = 8'h69;
+# Info:     LUT3 ix8481z1419 (.O (nx8481z3), .I0 (nx8473z1), .I1 (nx8473z4), .I2 (
+# Info:          nx8481z2)) ;
+# Info:          defparam ix8481z1419.INIT = 8'h69;
+# Info:     LUT2 ix50036z1320 (.O (nx50036z2), .I0 (nx8473z1), .I1 (nx50036z3)) ;
+# Info:          defparam ix50036z1320.INIT = 4'h6;
+# Info:     LUT3 ix8480z1419 (.O (nx8480z3), .I0 (nx8473z4), .I1 (nx8480z2), .I2 (
+# Info:          pix_in_int[15])) ;
+# Info:          defparam ix8480z1419.INIT = 8'h69;
+# Info:     LUT3 ix8479z1419 (.O (nx8479z3), .I0 (nx8473z4), .I1 (nx8479z2), .I2 (
+# Info:          pix_in_int[14])) ;
+# Info:          defparam ix8479z1419.INIT = 8'h69;
+# Info:     LUT3 ix8478z1419 (.O (nx8478z3), .I0 (nx8473z4), .I1 (nx8478z2), .I2 (
+# Info:          pix_in_int[13])) ;
+# Info:          defparam ix8478z1419.INIT = 8'h69;
+# Info:     LUT3 ix8477z1419 (.O (nx8477z3), .I0 (nx8473z4), .I1 (nx8477z2), .I2 (
+# Info:          pix_in_int[12])) ;
+# Info:          defparam ix8477z1419.INIT = 8'h69;
+# Info:     LUT3 ix8476z1419 (.O (nx8476z3), .I0 (nx8473z4), .I1 (nx8476z2), .I2 (
+# Info:          pix_in_int[11])) ;
+# Info:          defparam ix8476z1419.INIT = 8'h69;
+# Info:     LUT3 ix8475z1419 (.O (nx8475z3), .I0 (nx8473z4), .I1 (nx8475z2), .I2 (
+# Info:          pix_in_int[10])) ;
+# Info:          defparam ix8475z1419.INIT = 8'h69;
+# Info:     LUT3 ix8474z1419 (.O (nx8474z3), .I0 (nx8473z4), .I1 (nx8474z2), .I2 (
+# Info:          pix_in_int[9])) ;
+# Info:          defparam ix8474z1419.INIT = 8'h69;
+# Info:     LUT3 ix8473z1420 (.O (nx8473z3), .I0 (nx8473z4), .I1 (nx8473z2), .I2 (
+# Info:          pix_in_int[8])) ;
+# Info:          defparam ix8473z1420.INIT = 8'h69;
+# Info:     MUXCY muxcy_0_1 (.O (nx50043z1), .CI (nx8473z1), .DI (nx16719z1), .S (
+# Info:           nx50044z1)) ;
+# Info:     MUXCY muxcy_0_2 (.O (nx50042z1), .CI (nx50043z1), .DI (nx16720z1), .S (
+# Info:           nx50043z2)) ;
+# Info:     MUXCY muxcy_0_3 (.O (nx50041z1), .CI (nx50042z1), .DI (nx16721z1), .S (
+# Info:           nx50042z2)) ;
+# Info:     MUXCY muxcy_0_4 (.O (nx50040z1), .CI (nx50041z1), .DI (nx16722z1), .S (
+# Info:           nx50041z2)) ;
+# Info:     MUXCY muxcy_0_5 (.O (nx50039z1), .CI (nx50040z1), .DI (nx16723z1), .S (
+# Info:           nx50040z2)) ;
+# Info:     MUXCY muxcy_0_6 (.O (nx50038z1), .CI (nx50039z1), .DI (nx16724z1), .S (
+# Info:           nx50039z2)) ;
+# Info:     MUXCY muxcy_0_7 (.O (nx50036z1), .CI (nx50038z1), .DI (nx16725z1), .S (
+# Info:           nx50038z2)) ;
+# Info:     MUXCY muxcy_0_9 (.O (nx62787z1), .CI (nx50036z1), .DI (nx50036z3), .S (
+# Info:           nx50036z2)) ;
+# Info:     MUXCY muxcy_0 (.O (nx8474z1), .CI (nx8473z1), .DI (nx8473z2), .S (nx8473z3)
+# Info:           ) ;
+# Info:     MUXCY muxcy_1 (.O (nx8475z1), .CI (nx8474z1), .DI (nx8474z2), .S (nx8474z3)
+# Info:           ) ;
+# Info:     MUXCY muxcy_2 (.O (nx8476z1), .CI (nx8475z1), .DI (nx8475z2), .S (nx8475z3)
+# Info:           ) ;
+# Info:     MUXCY muxcy_3 (.O (nx8477z1), .CI (nx8476z1), .DI (nx8476z2), .S (nx8476z3)
+# Info:           ) ;
+# Info:     MUXCY muxcy_4 (.O (nx8478z1), .CI (nx8477z1), .DI (nx8477z2), .S (nx8477z3)
+# Info:           ) ;
+# Info:     MUXCY muxcy_5 (.O (nx8479z1), .CI (nx8478z1), .DI (nx8478z2), .S (nx8478z3)
+# Info:           ) ;
+# Info:     MUXCY muxcy_6 (.O (nx8480z1), .CI (nx8479z1), .DI (nx8479z2), .S (nx8479z3)
+# Info:           ) ;
+# Info:     MUXCY muxcy_7 (.O (nx8481z1), .CI (nx8480z1), .DI (nx8480z2), .S (nx8480z3)
+# Info:           ) ;
+# Info:     MUXCY muxcy_8 (.O (nx51679z1), .CI (nx8481z1), .DI (nx8481z2), .S (nx8481z3)
+# Info:           ) ;
+# Info: endmodule
+Creating result.zip...
+  adding: precision.xdc (deflated 62%)
+  adding: precision.log (deflated 83%)
+  adding: precision.xdb (deflated 87%)
+  adding: precision.v (deflated 84%)
+  adding: impl_1/ (stored 0%)
+  adding: impl_1/rtlc.out/ (stored 0%)
+  adding: impl_1/rtlc.out/.top (stored 0%)
+  adding: impl_1/rtlc.out/depend/ (stored 0%)
+  adding: impl_1/rtlc.out/rtlc.args (deflated 57%)
+  adding: impl_1/rtlc.out/EXEM_MACRO_DIR/ (stored 0%)
+  adding: impl_1/rtlc.out/Reports/ (stored 0%)
+  adding: impl_1/rtlc.out/Reports/Mem_Inferences/ (stored 0%)
+  adding: impl_1/rtlc.out/legalmodmap.db (deflated 3%)
+  adding: impl_1/rtlc.out/rtlc_args1.file (deflated 56%)
+  adding: impl_1/rtlc.out/FSM_REPORT/ (stored 0%)
+  adding: impl_1/rtlc.out/INCR/ (stored 0%)
+  adding: impl_1/rtlc.out/INCR/AREA/ (stored 0%)
+  adding: impl_1/rtlc.out/INCR/incr_rtlc.log (stored 0%)
+  adding: impl_1/rtlc.out/INCR/rtlc_propagated_attrib.info (stored 0%)
+  adding: impl_1/rtlc.out/INCR/hier.list (stored 0%)
+  adding: impl_1/rtlc.out/INCR/crosshier.list (stored 0%)
+  adding: impl_1/rtlc.out/INCR/tmp/ (stored 0%)
+  adding: impl_1/rtlc.out/INCR/emptymod.list (stored 0%)
+  adding: impl_1/rtlc.out/INCR/incr_driver.log (stored 0%)
+  adding: impl_1/rtlc.out/ToArchive.txt (stored 0%)
+  adding: impl_1/rtlc.out/.encInfo (deflated 25%)
+  adding: impl_1/rtlc.out/crosslangmod.list (stored 0%)
+  adding: impl_1/rtlc.out/NM/ (stored 0%)
+  adding: impl_1/rtlc.out/NET/ (stored 0%)
+  adding: impl_1/rtlc.out/MEM/ (stored 0%)
+  adding: impl_1/rtlc.out/ylibfile.list (stored 0%)
+  adding: impl_1/rtlc.out/vmw.mem_contents (stored 0%)
+  adding: impl_1/rtlc.out/.rtlc_compile (stored 0%)
+  adding: impl_1/vivado_impl_1/ (stored 0%)
+  adding: impl_1/redux.xdc (deflated 62%)
+  adding: impl_1/impl_1.psi (deflated 48%)
+  adding: impl_1/redux_con_rep.sdc (deflated 61%)
+  adding: impl_1/redux_rtl.ixdb (deflated 90%)
+  adding: impl_1/precision_rtl.sdc (deflated 70%)
+  adding: impl_1/unfolded_blocks.txt (stored 0%)
+  adding: impl_1/precision_tech.sdc (deflated 70%)
+  adding: impl_1/precision.log (deflated 84%)
+  adding: impl_1/autotop.conf (stored 0%)
+  adding: impl_1/redux_gated_clock.rep (stored 0%)
+  adding: impl_1/hdlAnalyze_sysverilogfile (stored 0%)
+  adding: impl_1/unfolded_operators.txt (stored 0%)
+  adding: impl_1/.jaguarc (deflated 76%)
+  adding: impl_1/redux_tech_con_rep.sdc (deflated 60%)
+  adding: impl_1/redux.tcl (deflated 69%)
+  adding: impl_1/redux.edf (deflated 91%)
+  adding: impl_1/rtlc_libs/ (stored 0%)
+  adding: impl_1/rtlc_libs/work/ (stored 0%)
+  adding: impl_1/rtlc_libs/work/2ext0.pac (deflated 96%)
+  adding: impl_1/rtlc_libs/work/redux.mod.body (deflated 91%)
+  adding: impl_1/rtlc_libs/work/rtlc_version_info (stored 0%)
+  adding: impl_1/rtlc_libs/work/redux.mod (deflated 77%)
+  adding: impl_1/rtlc_libs/work/.vextid.map (stored 0%)
+  adding: impl_1/rtlc_libs/work/.libinfo.map (stored 0%)
+  adding: impl_1/redux_fsm.rep (deflated 56%)
+  adding: impl_1/redux_area.rep (deflated 86%)
+  adding: impl_1/redux.v (deflated 84%)
+  adding: impl_1/redux_env.htm (deflated 77%)
+  adding: impl_1/precision.log.suppressed (stored 0%)
+  adding: impl_1/analysis.args1.file (deflated 43%)
+  adding: impl_1/redux.xdb (deflated 87%)
+  adding: project_1.psp (deflated 46%)
+  adding: pix.txt (deflated 74%)
+  adding: run.do (deflated 30%)
+  adding: work/ (stored 0%)
+  adding: testbench.sv (deflated 49%)
+  adding: design.sv (deflated 32%)
+  adding: ACCELLERA_OVL_VHDL_LIB/ (stored 0%)
+  adding: .bash_logout (stored 0%)
+  adding: .bashrc (deflated 23%)
+  adding: .bash_profile (deflated 21%)
+[2020-11-22 14:36:41 EST] Waiting for download...
+Done

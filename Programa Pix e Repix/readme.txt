@@ -1,0 +1,1 @@
+Programas auxiliares para passar os valores dos pixels para TXT e vice-versa.
