@@ -1,4 +1,4 @@
-# SSC0740-reducao-imagem
+# Redução de imagem
 
 ## Códigos:
 Hardware mínimo: https://www.edaplayground.com/x/7RLw
