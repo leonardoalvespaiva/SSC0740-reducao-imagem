@@ -1,4 +1,4 @@
-[2020-11-22 14:45:46 EST] precision -shell -file run.do -fileargs "design.sv" 
+[2020-11-25 17:49:29 EST] precision -shell -file run.do -fileargs "design.sv" 
 precision: Setting MGC_HOME to /usr/share/precision/Mgc_home ...
 precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Source)  -- 3.13.0-71-generic -- x86_64 
 //  Precision RTL Synthesis 64-bit 2019.2.0.9 (Production Release) Tue Dec  3 00:11:06 PST 2019
@@ -9,9 +9,9 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 //            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
 //          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 //  
-//  Running on Linux runner@3bc33de9536e #114-Ubuntu SMP Tue Dec 1 02:34:22 UTC 2015 3.13.0-71-generic x86_64
+//  Running on Linux runner@1da81bb105a7 #114-Ubuntu SMP Tue Dec 1 02:34:22 UTC 2015 3.13.0-71-generic x86_64
 //  
-//  Start time Sun Nov 22 14:45:47 2020
+//  Start time Wed Nov 25 17:49:30 2020
 # -------------------------------------------------
 # Info: [9569]: Logging session transcript to file /home/runner/precision.log
 # Warning: [9508]: Results directory is not set. Use new_project, open_project, or set_results_dir.
@@ -47,31 +47,18 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info: [40000]: Last compiled on Nov 25 2019 19:43:59
 # Info: [44512]: Initializing...
 # Info: [44522]: Root Module redux_paralelo: Pre-processing...
-# Warning: [45729]: "/home/runner/design.sv", line 3: Input port pix_in(0)(4) has never been used.
-# Warning: [45729]: "/home/runner/design.sv", line 3: Input port pix_in(1)(4) has never been used.
-# Warning: [45729]: "/home/runner/design.sv", line 3: Input port pix_in(2)(4) has never been used.
-# Warning: [45729]: "/home/runner/design.sv", line 3: Input port pix_in(3)(4) has never been used.
-# Warning: [45731]: "/home/runner/design.sv", line 4: Output port pix_out(4) has never been assigned a value.
 # Info: [44523]: Root Module redux_paralelo: Compiling...
 # Info: [44846]: Rebalanced Expression Tree...
 # Info: [44842]: Compilation successfully completed.
 # Info: [44856]: Total lines of RTL compiled: 14.
 # Info: [44835]: Total CPU time for compilation: 0.0 secs.
-# Info: [44513]: Overall running time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
 # Info: [667]: Current working directory: /home/runner/impl_1.
 # Info: [15333]: Doing rtl optimizations.
 # Info: [670]: Finished compiling design.
 # Info: [667]: Current working directory: /home/runner/impl_1.
 # Info: [20026]: MultiProc: Precision will use a maximum of 6 logical processors.
 # Info: [15002]: Optimizing design view:.work.redux_paralelo.INTERFACE
-# Warning: [1621]: Port pix_out(4)(0) is connected to a disabled tristate, possibly unconnected Port in design.
-# Warning: [1621]: Port pix_out(4)(1) is connected to a disabled tristate, possibly unconnected Port in design.
-# Warning: [1621]: Port pix_out(4)(2) is connected to a disabled tristate, possibly unconnected Port in design.
-# Warning: [1621]: Port pix_out(4)(3) is connected to a disabled tristate, possibly unconnected Port in design.
-# Warning: [1621]: Port pix_out(4)(4) is connected to a disabled tristate, possibly unconnected Port in design.
-# Warning: [1621]: Port pix_out(4)(5) is connected to a disabled tristate, possibly unconnected Port in design.
-# Warning: [1621]: Port pix_out(4)(6) is connected to a disabled tristate, possibly unconnected Port in design.
-# Warning: [1621]: Port pix_out(4)(7) is connected to a disabled tristate, possibly unconnected Port in design.
 # Info: [15002]: Optimizing design view:.work.redux_paralelo.INTERFACE
 # Info: [8010]: Gated clock transformations: Begin...
 # Info: [8010]: Gated clock transformations: End...
@@ -81,8 +68,8 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info: [3027]: Writing file: /home/runner/impl_1/redux_paralelo.v.
 # Info: -- Writing file /home/runner/impl_1/redux_paralelo.tcl
 # Info: [670]: Finished synthesizing design.
-# Info: [11019]: Total CPU time for synthesis: 1.3 s secs.
-# Info: [11020]: Overall running time for synthesis: 1.4 s secs.
+# Info: [11019]: Total CPU time for synthesis: 1.6 s secs.
+# Info: [11020]: Overall running time for synthesis: 1.7 s secs.
 # Info: /home/runner/impl_1/precision_tech.sdc
 # Info: [3027]: Writing file: /home/runner/precision.v.
 # Info: [3027]: Writing file: /home/runner/precision.xdc.
@@ -106,7 +93,7 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info: ---------------------------------------------------------------
 # Info: IOs                               200     210      95.24%
 # Info: Global Buffers                    0       32        0.00%
-# Info: LUTs                              108     63400     0.17%
+# Info: LUTs                              135     63400     0.21%
 # Info: CLB Slices                        0       15850     0.00%
 # Info: Dffs or Latches                   0       126800    0.00%
 # Info: Block RAMs                        0       135       0.00%
@@ -116,14 +103,14 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info: Library: work    Cell: redux_paralelo    View: INTERFACE
 # Info: ******************************************************************
 # Info:  Number of ports :                          200
-# Info:  Number of nets :                           546
-# Info:  Number of instances :                      418
+# Info:  Number of nets :                           672
+# Info:  Number of instances :                      512
 # Info:  Number of references to this view :          0
 # Info: Total accumulated area :
-# Info:  Number of LUTs :                           108
-# Info:  Number of LUTs with LUTNM/HLUTNM :          64
-# Info:  Number of MUX CARRYs :                      68
-# Info:  Number of accumulated instances :          418
+# Info:  Number of LUTs :                           135
+# Info:  Number of LUTs with LUTNM/HLUTNM :          80
+# Info:  Number of MUX CARRYs :                      85
+# Info:  Number of accumulated instances :          512
 # Info: *****************************
 # Info:  IO Register Mapping Report
 # Info: *****************************
@@ -535,7 +522,7 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info: [12022]: Design has no timing constraint and no timing information.
 # Info: //
 # Info: // Verilog description for cell redux_paralelo,
-# Info: // Sun Nov 22 14:45:52 2020
+# Info: // Wed Nov 25 17:49:35 2020
 # Info: //
 # Info: // Precision RTL Synthesis, 64-bit 2019.2.0.9//
 # Info: module redux_paralelo ( \pix_in(3)(4) , \pix_in(3)(3) , \pix_in(3)(2) ,
@@ -572,65 +559,83 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info:     output [7:0]\pix_out(2)  ;
 # Info:     output [7:0]\pix_out(1)  ;
 # Info:     output [7:0]\pix_out(0)  ;
-# Info:     wire \pix_out(3)_1_0(7)  , \pix_out(3)_1_0(6)  , \pix_out(3)_1_0(5)  ,
-# Info:          \pix_out(3)_1_0(4)  , \pix_out(3)_1_0(3)  , \pix_out(3)_1_0(2)  ,
-# Info:          \pix_out(3)_1_0(1)  , \pix_out(3)_1_0(0)  , \pix_out(2)_1_0(7)  ,
-# Info:          \pix_out(2)_1_0(6)  , \pix_out(2)_1_0(5)  , \pix_out(2)_1_0(4)  ,
-# Info:          \pix_out(2)_1_0(3)  , \pix_out(2)_1_0(2)  , \pix_out(2)_1_0(1)  ,
-# Info:          \pix_out(2)_1_0(0)  , \pix_out(1)_1_0(7)  , \pix_out(1)_1_0(6)  ,
-# Info:          \pix_out(1)_1_0(5)  , \pix_out(1)_1_0(4)  , \pix_out(1)_1_0(3)  ,
-# Info:          \pix_out(1)_1_0(2)  , \pix_out(1)_1_0(1)  , \pix_out(1)_1_0(0)  ,
-# Info:          \pix_out(0)_1_0(7)  , \pix_out(0)_1_0(6)  , \pix_out(0)_1_0(5)  ,
-# Info:          \pix_out(0)_1_0(4)  , \pix_out(0)_1_0(3)  , \pix_out(0)_1_0(2)  ,
-# Info:          \pix_out(0)_1_0(1)  , \pix_out(0)_1_0(0)  , nx8473z1, nx8473z4,
-# Info:          nx8473z2, nx8474z2, nx8475z2, nx8476z2, nx8477z2, nx8478z2, nx8479z2,
-# Info:          nx8480z2, nx8481z2, nx51679z3, nx50045z1, nx16719z1, nx50044z1,
-# Info:          nx16720z1, nx50043z1, nx50043z2, nx16721z1, nx50042z1, nx50042z2,
-# Info:          nx16722z1, nx50041z1, nx50041z2, nx16723z1, nx50040z1, nx50040z2,
-# Info:          nx16724z1, nx50039z1, nx50039z2, nx16725z1, nx50038z1, nx50038z2,
-# Info:          nx50036z3, nx50036z1, nx62787z1, nx8474z1, nx8475z1, nx8476z1, nx8477z1,
-# Info:          nx8478z1, nx8479z1, nx8480z1, nx8481z1, nx51679z1, nx54040z2, nx60838z2,
-# Info:          nx3087z2, nx54664z2, nx46879z2, nx39094z2, nx32296z2, nx24511z2,
-# Info:          nx16726z2, nx34217z3, nx22067z1, nx36390z1, nx27198z1, nx41521z1,
-# Info:          nx1778z1, nx1778z2, nx7599z1, nx59531z1, nx59531z2, nx184z1, nx51748z1,
-# Info:          nx51748z2, nx6980z1, nx44952z1, nx44952z2, nx14763z1, nx37169z1,
-# Info:          nx37169z2, nx22546z1, nx35163z1, nx35163z2, nx50733z3, nx50733z1,
-# Info:          nx27816z1, nx60838z1, nx3087z1, nx54664z1, nx46879z1, nx39094z1,
-# Info:          nx32296z1, nx24511z1, nx16726z1, nx34217z1, nx48061z2, nx55846z2,
-# Info:          nx32139z2, nx63786z2, nx28639z2, nx6508z2, nx41655z2, nx53283z2,
-# Info:          nx18136z2, nx18903z3, nx43200z1, nx28157z1, nx14553z1, nx20374z1,
-# Info:          nx6770z1, nx6770z2, nx12591z1, nx65510z1, nx65510z2, nx59741z1,
-# Info:          nx57727z1, nx57727z2, nx1988z1, nx50931z1, nx50931z2, nx8784z1,
-# Info:          nx43148z1, nx43148z2, nx16567z1, nx30171z1, nx30171z2, nx44754z3,
-# Info:          nx44754z1, nx21837z1, nx55846z1, nx32139z1, nx63786z1, nx28639z1,
-# Info:          nx6508z1, nx41655z1, nx53283z1, nx18136z1, nx18903z1, nx33163z2,
-# Info:          nx1984z2, nx37131z2, nx58794z2, nx22660z2, nx12487z2, nx47634z2,
-# Info:          nx48291z2, nx13144z2, nx12924z3, nx64031z1, nx31668z1, nx34631z1,
-# Info:          nx4468z1, nx61292z1, nx61292z2, nx39617z1, nx26143z1, nx26143z2,
-# Info:          nx55319z1, nx9993z1, nx9993z2, nx20170z1, nx45142z1, nx45142z2,
-# Info:          nx14979z1, nx49794z1, nx49794z2, nx51115z1, nx14645z1, nx14645z2,
-# Info:          nx55649z3, nx55649z1, nx34707z1, nx1984z1, nx37131z1, nx58794z1,
-# Info:          nx22660z1, nx12487z1, nx47634z1, nx48291z1, nx13144z1, nx12924z1;
+# Info:     wire \pix_out(4)_1_0(7)  , \pix_out(4)_1_0(6)  , \pix_out(4)_1_0(5)  ,
+# Info:          \pix_out(4)_1_0(4)  , \pix_out(4)_1_0(3)  , \pix_out(4)_1_0(2)  ,
+# Info:          \pix_out(4)_1_0(1)  , \pix_out(4)_1_0(0)  , \pix_out(3)_1_0(7)  ,
+# Info:          \pix_out(3)_1_0(6)  , \pix_out(3)_1_0(5)  , \pix_out(3)_1_0(4)  ,
+# Info:          \pix_out(3)_1_0(3)  , \pix_out(3)_1_0(2)  , \pix_out(3)_1_0(1)  ,
+# Info:          \pix_out(3)_1_0(0)  , \pix_out(2)_1_0(7)  , \pix_out(2)_1_0(6)  ,
+# Info:          \pix_out(2)_1_0(5)  , \pix_out(2)_1_0(4)  , \pix_out(2)_1_0(3)  ,
+# Info:          \pix_out(2)_1_0(2)  , \pix_out(2)_1_0(1)  , \pix_out(2)_1_0(0)  ,
+# Info:          \pix_out(1)_1_0(7)  , \pix_out(1)_1_0(6)  , \pix_out(1)_1_0(5)  ,
+# Info:          \pix_out(1)_1_0(4)  , \pix_out(1)_1_0(3)  , \pix_out(1)_1_0(2)  ,
+# Info:          \pix_out(1)_1_0(1)  , \pix_out(1)_1_0(0)  , \pix_out(0)_1_0(7)  ,
+# Info:          \pix_out(0)_1_0(6)  , \pix_out(0)_1_0(5)  , \pix_out(0)_1_0(4)  ,
+# Info:          \pix_out(0)_1_0(3)  , \pix_out(0)_1_0(2)  , \pix_out(0)_1_0(1)  ,
+# Info:          \pix_out(0)_1_0(0)  , nx8473z1, nx8473z4, nx8473z2, nx8474z2, nx8475z2,
+# Info:          nx8476z2, nx8477z2, nx8478z2, nx8479z2, nx8480z2, nx8481z2, nx51679z3,
+# Info:          nx50045z1, nx16719z1, nx50044z1, nx16720z1, nx50043z1, nx50043z2,
+# Info:          nx16721z1, nx50042z1, nx50042z2, nx16722z1, nx50041z1, nx50041z2,
+# Info:          nx16723z1, nx50040z1, nx50040z2, nx16724z1, nx50039z1, nx50039z2,
+# Info:          nx16725z1, nx50038z1, nx50038z2, nx50036z3, nx50036z1, nx62787z1,
+# Info:          nx8474z1, nx8475z1, nx8476z1, nx8477z1, nx8478z1, nx8479z1, nx8480z1,
+# Info:          nx8481z1, nx51679z1, nx54040z2, nx60838z2, nx3087z2, nx54664z2,
+# Info:          nx46879z2, nx39094z2, nx32296z2, nx24511z2, nx16726z2, nx34217z3,
+# Info:          nx22067z1, nx36390z1, nx27198z1, nx41521z1, nx1778z1, nx1778z2,
+# Info:          nx7599z1, nx59531z1, nx59531z2, nx184z1, nx51748z1, nx51748z2, nx6980z1,
+# Info:          nx44952z1, nx44952z2, nx14763z1, nx37169z1, nx37169z2, nx22546z1,
+# Info:          nx35163z1, nx35163z2, nx50733z3, nx50733z1, nx27816z1, nx60838z1,
+# Info:          nx3087z1, nx54664z1, nx46879z1, nx39094z1, nx32296z1, nx24511z1,
+# Info:          nx16726z1, nx34217z1, nx48061z2, nx55846z2, nx32139z2, nx63786z2,
+# Info:          nx28639z2, nx6508z2, nx41655z2, nx53283z2, nx18136z2, nx18903z3,
+# Info:          nx43200z1, nx28157z1, nx14553z1, nx20374z1, nx6770z1, nx6770z2,
+# Info:          nx12591z1, nx65510z1, nx65510z2, nx59741z1, nx57727z1, nx57727z2,
+# Info:          nx1988z1, nx50931z1, nx50931z2, nx8784z1, nx43148z1, nx43148z2,
+# Info:          nx16567z1, nx30171z1, nx30171z2, nx44754z3, nx44754z1, nx21837z1,
+# Info:          nx55846z1, nx32139z1, nx63786z1, nx28639z1, nx6508z1, nx41655z1,
+# Info:          nx53283z1, nx18136z1, nx18903z1, nx33163z2, nx1984z2, nx37131z2,
+# Info:          nx58794z2, nx22660z2, nx12487z2, nx47634z2, nx48291z2, nx13144z2,
+# Info:          nx12924z3, nx64031z1, nx31668z1, nx34631z1, nx4468z1, nx61292z1,
+# Info:          nx61292z2, nx39617z1, nx26143z1, nx26143z2, nx55319z1, nx9993z1,
+# Info:          nx9993z2, nx20170z1, nx45142z1, nx45142z2, nx14979z1, nx49794z1,
+# Info:          nx49794z2, nx51115z1, nx14645z1, nx14645z2, nx55649z3, nx55649z1,
+# Info:          nx34707z1, nx1984z1, nx37131z1, nx58794z1, nx22660z1, nx12487z1,
+# Info:          nx47634z1, nx48291z1, nx13144z1, nx12924z1, nx26185z2, nx8962z2,
+# Info:          nx44109z2, nx51816z2, nx16669z2, nx19465z2, nx54612z2, nx41313z2,
+# Info:          nx6166z2, nx6933z3, nx4474z1, nx25689z1, nx39623z1, nx9460z1, nx55313z1,
+# Info:          nx55313z2, nx45596z1, nx20164z1, nx20164z2, nx50327z1, nx15972z1,
+# Info:          nx15972z2, nx14191z1, nx51121z1, nx51121z2, nx20958z1, nx44802z1,
+# Info:          nx44802z2, nx56107z1, nx7667z1, nx7667z2, nx62627z3, nx62627z1,
+# Info:          nx28716z1, nx8962z1, nx44109z1, nx51816z1, nx16669z1, nx19465z1,
+# Info:          nx54612z1, nx41313z1, nx6166z1, nx6933z1;
 # Info:     wire [7:0]pix_in_int;
-# Info:     wire \pix_in_int(3)(2)(7)  , \pix_in_int(3)(2)(6)  , \pix_in_int(3)(2)(5)  ,
-# Info:          \pix_in_int(3)(2)(4)  , \pix_in_int(3)(2)(3)  , \pix_in_int(3)(2)(2)  ,
-# Info:          \pix_in_int(3)(2)(1)  , \pix_in_int(3)(2)(0)  , \pix_in_int(3)(1)(7)  ,
-# Info:          \pix_in_int(3)(1)(6)  , \pix_in_int(3)(1)(5)  , \pix_in_int(3)(1)(4)  ,
-# Info:          \pix_in_int(3)(1)(3)  , \pix_in_int(3)(1)(2)  , \pix_in_int(3)(1)(1)  ,
-# Info:          \pix_in_int(3)(1)(0)  , \pix_in_int(3)(0)(7)  , \pix_in_int(3)(0)(6)  ,
-# Info:          \pix_in_int(3)(0)(5)  , \pix_in_int(3)(0)(4)  , \pix_in_int(3)(0)(3)  ,
-# Info:          \pix_in_int(3)(0)(2)  , \pix_in_int(3)(0)(1)  , \pix_in_int(3)(0)(0)  ,
-# Info:          \pix_in_int(2)(3)(7)  , \pix_in_int(2)(3)(6)  , \pix_in_int(2)(3)(5)  ,
-# Info:          \pix_in_int(2)(3)(4)  , \pix_in_int(2)(3)(3)  , \pix_in_int(2)(3)(2)  ,
-# Info:          \pix_in_int(2)(3)(1)  , \pix_in_int(2)(3)(0)  , \pix_in_int(2)(2)(7)  ,
-# Info:          \pix_in_int(2)(2)(6)  , \pix_in_int(2)(2)(5)  , \pix_in_int(2)(2)(4)  ,
-# Info:          \pix_in_int(2)(2)(3)  , \pix_in_int(2)(2)(2)  , \pix_in_int(2)(2)(1)  ,
-# Info:          \pix_in_int(2)(2)(0)  , \pix_in_int(2)(1)(7)  , \pix_in_int(2)(1)(6)  ,
-# Info:          \pix_in_int(2)(1)(5)  , \pix_in_int(2)(1)(4)  , \pix_in_int(2)(1)(3)  ,
-# Info:          \pix_in_int(2)(1)(2)  , \pix_in_int(2)(1)(1)  , \pix_in_int(2)(1)(0)  ,
-# Info:          \pix_in_int(2)(0)(7)  , \pix_in_int(2)(0)(6)  , \pix_in_int(2)(0)(5)  ,
-# Info:          \pix_in_int(2)(0)(4)  , \pix_in_int(2)(0)(3)  , \pix_in_int(2)(0)(2)  ,
-# Info:          \pix_in_int(2)(0)(1)  , \pix_in_int(2)(0)(0)  , \pix_in_int(1)(3)(7)  ,
+# Info:     wire \pix_in_int(3)(3)(7)  , \pix_in_int(3)(3)(6)  , \pix_in_int(3)(3)(5)  ,
+# Info:          \pix_in_int(3)(3)(4)  , \pix_in_int(3)(3)(3)  , \pix_in_int(3)(3)(2)  ,
+# Info:          \pix_in_int(3)(3)(1)  , \pix_in_int(3)(3)(0)  , \pix_in_int(3)(2)(7)  ,
+# Info:          \pix_in_int(3)(2)(6)  , \pix_in_int(3)(2)(5)  , \pix_in_int(3)(2)(4)  ,
+# Info:          \pix_in_int(3)(2)(3)  , \pix_in_int(3)(2)(2)  , \pix_in_int(3)(2)(1)  ,
+# Info:          \pix_in_int(3)(2)(0)  , \pix_in_int(3)(1)(7)  , \pix_in_int(3)(1)(6)  ,
+# Info:          \pix_in_int(3)(1)(5)  , \pix_in_int(3)(1)(4)  , \pix_in_int(3)(1)(3)  ,
+# Info:          \pix_in_int(3)(1)(2)  , \pix_in_int(3)(1)(1)  , \pix_in_int(3)(1)(0)  ,
+# Info:          \pix_in_int(3)(0)(7)  , \pix_in_int(3)(0)(6)  , \pix_in_int(3)(0)(5)  ,
+# Info:          \pix_in_int(3)(0)(4)  , \pix_in_int(3)(0)(3)  , \pix_in_int(3)(0)(2)  ,
+# Info:          \pix_in_int(3)(0)(1)  , \pix_in_int(3)(0)(0)  , \pix_in_int(2)(4)(7)  ,
+# Info:          \pix_in_int(2)(4)(6)  , \pix_in_int(2)(4)(5)  , \pix_in_int(2)(4)(4)  ,
+# Info:          \pix_in_int(2)(4)(3)  , \pix_in_int(2)(4)(2)  , \pix_in_int(2)(4)(1)  ,
+# Info:          \pix_in_int(2)(4)(0)  , \pix_in_int(2)(3)(7)  , \pix_in_int(2)(3)(6)  ,
+# Info:          \pix_in_int(2)(3)(5)  , \pix_in_int(2)(3)(4)  , \pix_in_int(2)(3)(3)  ,
+# Info:          \pix_in_int(2)(3)(2)  , \pix_in_int(2)(3)(1)  , \pix_in_int(2)(3)(0)  ,
+# Info:          \pix_in_int(2)(2)(7)  , \pix_in_int(2)(2)(6)  , \pix_in_int(2)(2)(5)  ,
+# Info:          \pix_in_int(2)(2)(4)  , \pix_in_int(2)(2)(3)  , \pix_in_int(2)(2)(2)  ,
+# Info:          \pix_in_int(2)(2)(1)  , \pix_in_int(2)(2)(0)  , \pix_in_int(2)(1)(7)  ,
+# Info:          \pix_in_int(2)(1)(6)  , \pix_in_int(2)(1)(5)  , \pix_in_int(2)(1)(4)  ,
+# Info:          \pix_in_int(2)(1)(3)  , \pix_in_int(2)(1)(2)  , \pix_in_int(2)(1)(1)  ,
+# Info:          \pix_in_int(2)(1)(0)  , \pix_in_int(2)(0)(7)  , \pix_in_int(2)(0)(6)  ,
+# Info:          \pix_in_int(2)(0)(5)  , \pix_in_int(2)(0)(4)  , \pix_in_int(2)(0)(3)  ,
+# Info:          \pix_in_int(2)(0)(2)  , \pix_in_int(2)(0)(1)  , \pix_in_int(2)(0)(0)  ,
+# Info:          \pix_in_int(1)(4)(7)  , \pix_in_int(1)(4)(6)  , \pix_in_int(1)(4)(5)  ,
+# Info:          \pix_in_int(1)(4)(4)  , \pix_in_int(1)(4)(3)  , \pix_in_int(1)(4)(2)  ,
+# Info:          \pix_in_int(1)(4)(1)  , \pix_in_int(1)(4)(0)  , \pix_in_int(1)(3)(7)  ,
 # Info:          \pix_in_int(1)(3)(6)  , \pix_in_int(1)(3)(5)  , \pix_in_int(1)(3)(4)  ,
 # Info:          \pix_in_int(1)(3)(3)  , \pix_in_int(1)(3)(2)  , \pix_in_int(1)(3)(1)  ,
 # Info:          \pix_in_int(1)(3)(0)  , \pix_in_int(1)(2)(7)  , \pix_in_int(1)(2)(6)  ,
@@ -641,404 +646,506 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info:          \pix_in_int(1)(1)(1)  , \pix_in_int(1)(1)(0)  , \pix_in_int(1)(0)(7)  ,
 # Info:          \pix_in_int(1)(0)(6)  , \pix_in_int(1)(0)(5)  , \pix_in_int(1)(0)(4)  ,
 # Info:          \pix_in_int(1)(0)(3)  , \pix_in_int(1)(0)(2)  , \pix_in_int(1)(0)(1)  ,
-# Info:          \pix_in_int(1)(0)(0)  , \pix_in_int(0)(3)(7)  , \pix_in_int(0)(3)(6)  ,
-# Info:          \pix_in_int(0)(3)(5)  , \pix_in_int(0)(3)(4)  , \pix_in_int(0)(3)(3)  ,
-# Info:          \pix_in_int(0)(3)(2)  , \pix_in_int(0)(3)(1)  , \pix_in_int(0)(3)(0)  ,
-# Info:          \pix_in_int(0)(2)(7)  , \pix_in_int(0)(2)(6)  , \pix_in_int(0)(2)(5)  ,
-# Info:          \pix_in_int(0)(2)(4)  , \pix_in_int(0)(2)(3)  , \pix_in_int(0)(2)(2)  ,
-# Info:          \pix_in_int(0)(2)(1)  , \pix_in_int(0)(2)(0)  , \pix_in_int(0)(1)(7)  ,
-# Info:          \pix_in_int(0)(1)(6)  , \pix_in_int(0)(1)(5)  , \pix_in_int(0)(1)(4)  ,
-# Info:          \pix_in_int(0)(1)(3)  , \pix_in_int(0)(1)(2)  , \pix_in_int(0)(1)(1)  ,
-# Info:          \pix_in_int(0)(1)(0)  , \pix_in_int(0)(0)(7)  , \pix_in_int(0)(0)(6)  ,
-# Info:          \pix_in_int(0)(0)(5)  , \pix_in_int(0)(0)(4)  , \pix_in_int(0)(0)(3)  ,
-# Info:          \pix_in_int(0)(0)(2)  , \pix_in_int(0)(0)(1)  , \pix_in_int(0)(0)(0)  ,
-# Info:          nx12924z2, nx13144z3, nx55649z2, nx18903z2, nx18136z3, nx44754z2,
-# Info:          nx34217z2, nx16726z3, nx50733z2, nx51679z2, nx8481z3, nx50036z2,
-# Info:          nx48291z3, nx47634z3, nx12487z3, nx22660z3, nx58794z3, nx37131z3,
-# Info:          nx1984z3, nx33163z3, nx53283z3, nx41655z3, nx6508z3, nx28639z3,
-# Info:          nx63786z3, nx32139z3, nx55846z3, nx48061z3, nx24511z3, nx32296z3,
-# Info:          nx39094z3, nx46879z3, nx54664z3, nx3087z3, nx60838z3, nx54040z3,
-# Info:          nx8480z3, nx8479z3, nx8478z3, nx8477z3, nx8476z3, nx8475z3, nx8474z3,
-# Info:          nx8473z3;
+# Info:          \pix_in_int(1)(0)(0)  , \pix_in_int(0)(4)(7)  , \pix_in_int(0)(4)(6)  ,
+# Info:          \pix_in_int(0)(4)(5)  , \pix_in_int(0)(4)(4)  , \pix_in_int(0)(4)(3)  ,
+# Info:          \pix_in_int(0)(4)(2)  , \pix_in_int(0)(4)(1)  , \pix_in_int(0)(4)(0)  ,
+# Info:          \pix_in_int(0)(3)(7)  , \pix_in_int(0)(3)(6)  , \pix_in_int(0)(3)(5)  ,
+# Info:          \pix_in_int(0)(3)(4)  , \pix_in_int(0)(3)(3)  , \pix_in_int(0)(3)(2)  ,
+# Info:          \pix_in_int(0)(3)(1)  , \pix_in_int(0)(3)(0)  , \pix_in_int(0)(2)(7)  ,
+# Info:          \pix_in_int(0)(2)(6)  , \pix_in_int(0)(2)(5)  , \pix_in_int(0)(2)(4)  ,
+# Info:          \pix_in_int(0)(2)(3)  , \pix_in_int(0)(2)(2)  , \pix_in_int(0)(2)(1)  ,
+# Info:          \pix_in_int(0)(2)(0)  , \pix_in_int(0)(1)(7)  , \pix_in_int(0)(1)(6)  ,
+# Info:          \pix_in_int(0)(1)(5)  , \pix_in_int(0)(1)(4)  , \pix_in_int(0)(1)(3)  ,
+# Info:          \pix_in_int(0)(1)(2)  , \pix_in_int(0)(1)(1)  , \pix_in_int(0)(1)(0)  ,
+# Info:          \pix_in_int(0)(0)(7)  , \pix_in_int(0)(0)(6)  , \pix_in_int(0)(0)(5)  ,
+# Info:          \pix_in_int(0)(0)(4)  , \pix_in_int(0)(0)(3)  , \pix_in_int(0)(0)(2)  ,
+# Info:          \pix_in_int(0)(0)(1)  , \pix_in_int(0)(0)(0)  , nx6933z2, nx6166z3,
+# Info:          nx62627z2, nx12924z2, nx13144z3, nx55649z2, nx18903z2, nx18136z3,
+# Info:          nx44754z2, nx34217z2, nx16726z3, nx50733z2, nx51679z2, nx8481z3,
+# Info:          nx50036z2, nx41313z3, nx54612z3, nx19465z3, nx16669z3, nx51816z3,
+# Info:          nx44109z3, nx8962z3, nx26185z3, nx48291z3, nx47634z3, nx12487z3,
+# Info:          nx22660z3, nx58794z3, nx37131z3, nx1984z3, nx33163z3, nx53283z3,
+# Info:          nx41655z3, nx6508z3, nx28639z3, nx63786z3, nx32139z3, nx55846z3,
+# Info:          nx48061z3, nx24511z3, nx32296z3, nx39094z3, nx46879z3, nx54664z3,
+# Info:          nx3087z3, nx60838z3, nx54040z3, nx8480z3, nx8479z3, nx8478z3, nx8477z3,
+# Info:          nx8476z3, nx8475z3, nx8474z3, nx8473z3;
 # Info:     GND ps_gnd (.G (nx8473z1)) ;
 # Info:     VCC ps_vcc (.P (nx8473z4)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_0" *)
-# Info:     LUT4 slut_0_0 (.O (nx50045z1), .I0 (\pix_in_int(2)(3)(0)  ), .I1 (
-# Info:          pix_in_int[0]), .I2 (\pix_in_int(0)(3)(0)  ), .I3 (nx8473z1)) ;
+# Info:     LUT4 slut_0_0 (.O (nx50045z1), .I0 (\pix_in_int(2)(4)(0)  ), .I1 (
+# Info:          pix_in_int[0]), .I2 (\pix_in_int(0)(4)(0)  ), .I3 (nx8473z1)) ;
 # Info:          defparam slut_0_0.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_0" *)
-# Info:     LUT3 clut_0_0 (.O (nx16719z1), .I0 (\pix_in_int(2)(3)(0)  ), .I1 (
-# Info:          pix_in_int[0]), .I2 (\pix_in_int(0)(3)(0)  )) ;
+# Info:     LUT3 clut_0_0 (.O (nx16719z1), .I0 (\pix_in_int(2)(4)(0)  ), .I1 (
+# Info:          pix_in_int[0]), .I2 (\pix_in_int(0)(4)(0)  )) ;
 # Info:          defparam clut_0_0.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_0 (.O (nx8473z2), .CI (nx8473z1), .LI (nx50045z1)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_1" *)
-# Info:     LUT4 slut_0_1 (.O (nx50044z1), .I0 (\pix_in_int(2)(3)(1)  ), .I1 (
-# Info:          pix_in_int[1]), .I2 (\pix_in_int(0)(3)(1)  ), .I3 (nx16719z1)) ;
+# Info:     LUT4 slut_0_1 (.O (nx50044z1), .I0 (\pix_in_int(2)(4)(1)  ), .I1 (
+# Info:          pix_in_int[1]), .I2 (\pix_in_int(0)(4)(1)  ), .I3 (nx16719z1)) ;
 # Info:          defparam slut_0_1.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_1" *)
-# Info:     LUT3 clut_0_1 (.O (nx16720z1), .I0 (\pix_in_int(2)(3)(1)  ), .I1 (
-# Info:          pix_in_int[1]), .I2 (\pix_in_int(0)(3)(1)  )) ;
+# Info:     LUT3 clut_0_1 (.O (nx16720z1), .I0 (\pix_in_int(2)(4)(1)  ), .I1 (
+# Info:          pix_in_int[1]), .I2 (\pix_in_int(0)(4)(1)  )) ;
 # Info:          defparam clut_0_1.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_1 (.O (nx8474z2), .CI (nx8473z1), .LI (nx50044z1)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_2" *)
-# Info:     LUT4 slut_0_2 (.O (nx50043z2), .I0 (\pix_in_int(2)(3)(2)  ), .I1 (
-# Info:          pix_in_int[2]), .I2 (\pix_in_int(0)(3)(2)  ), .I3 (nx16720z1)) ;
+# Info:     LUT4 slut_0_2 (.O (nx50043z2), .I0 (\pix_in_int(2)(4)(2)  ), .I1 (
+# Info:          pix_in_int[2]), .I2 (\pix_in_int(0)(4)(2)  ), .I3 (nx16720z1)) ;
 # Info:          defparam slut_0_2.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_2" *)
-# Info:     LUT3 clut_0_2 (.O (nx16721z1), .I0 (\pix_in_int(2)(3)(2)  ), .I1 (
-# Info:          pix_in_int[2]), .I2 (\pix_in_int(0)(3)(2)  )) ;
+# Info:     LUT3 clut_0_2 (.O (nx16721z1), .I0 (\pix_in_int(2)(4)(2)  ), .I1 (
+# Info:          pix_in_int[2]), .I2 (\pix_in_int(0)(4)(2)  )) ;
 # Info:          defparam clut_0_2.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_2 (.O (nx8475z2), .CI (nx50043z1), .LI (nx50043z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_3" *)
-# Info:     LUT4 slut_0_3 (.O (nx50042z2), .I0 (\pix_in_int(2)(3)(3)  ), .I1 (
-# Info:          pix_in_int[3]), .I2 (\pix_in_int(0)(3)(3)  ), .I3 (nx16721z1)) ;
+# Info:     LUT4 slut_0_3 (.O (nx50042z2), .I0 (\pix_in_int(2)(4)(3)  ), .I1 (
+# Info:          pix_in_int[3]), .I2 (\pix_in_int(0)(4)(3)  ), .I3 (nx16721z1)) ;
 # Info:          defparam slut_0_3.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_3" *)
-# Info:     LUT3 clut_0_3 (.O (nx16722z1), .I0 (\pix_in_int(2)(3)(3)  ), .I1 (
-# Info:          pix_in_int[3]), .I2 (\pix_in_int(0)(3)(3)  )) ;
+# Info:     LUT3 clut_0_3 (.O (nx16722z1), .I0 (\pix_in_int(2)(4)(3)  ), .I1 (
+# Info:          pix_in_int[3]), .I2 (\pix_in_int(0)(4)(3)  )) ;
 # Info:          defparam clut_0_3.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_3 (.O (nx8476z2), .CI (nx50042z1), .LI (nx50042z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_4" *)
-# Info:     LUT4 slut_0_4 (.O (nx50041z2), .I0 (\pix_in_int(2)(3)(4)  ), .I1 (
-# Info:          pix_in_int[4]), .I2 (\pix_in_int(0)(3)(4)  ), .I3 (nx16722z1)) ;
+# Info:     LUT4 slut_0_4 (.O (nx50041z2), .I0 (\pix_in_int(2)(4)(4)  ), .I1 (
+# Info:          pix_in_int[4]), .I2 (\pix_in_int(0)(4)(4)  ), .I3 (nx16722z1)) ;
 # Info:          defparam slut_0_4.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_4" *)
-# Info:     LUT3 clut_0_4 (.O (nx16723z1), .I0 (\pix_in_int(2)(3)(4)  ), .I1 (
-# Info:          pix_in_int[4]), .I2 (\pix_in_int(0)(3)(4)  )) ;
+# Info:     LUT3 clut_0_4 (.O (nx16723z1), .I0 (\pix_in_int(2)(4)(4)  ), .I1 (
+# Info:          pix_in_int[4]), .I2 (\pix_in_int(0)(4)(4)  )) ;
 # Info:          defparam clut_0_4.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_4 (.O (nx8477z2), .CI (nx50041z1), .LI (nx50041z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_5" *)
-# Info:     LUT4 slut_0_5 (.O (nx50040z2), .I0 (\pix_in_int(2)(3)(5)  ), .I1 (
-# Info:          pix_in_int[5]), .I2 (\pix_in_int(0)(3)(5)  ), .I3 (nx16723z1)) ;
+# Info:     LUT4 slut_0_5 (.O (nx50040z2), .I0 (\pix_in_int(2)(4)(5)  ), .I1 (
+# Info:          pix_in_int[5]), .I2 (\pix_in_int(0)(4)(5)  ), .I3 (nx16723z1)) ;
 # Info:          defparam slut_0_5.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_5" *)
-# Info:     LUT3 clut_0_5 (.O (nx16724z1), .I0 (\pix_in_int(2)(3)(5)  ), .I1 (
-# Info:          pix_in_int[5]), .I2 (\pix_in_int(0)(3)(5)  )) ;
+# Info:     LUT3 clut_0_5 (.O (nx16724z1), .I0 (\pix_in_int(2)(4)(5)  ), .I1 (
+# Info:          pix_in_int[5]), .I2 (\pix_in_int(0)(4)(5)  )) ;
 # Info:          defparam clut_0_5.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_5 (.O (nx8478z2), .CI (nx50040z1), .LI (nx50040z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_6" *)
-# Info:     LUT4 slut_0_6 (.O (nx50039z2), .I0 (\pix_in_int(2)(3)(6)  ), .I1 (
-# Info:          pix_in_int[6]), .I2 (\pix_in_int(0)(3)(6)  ), .I3 (nx16724z1)) ;
+# Info:     LUT4 slut_0_6 (.O (nx50039z2), .I0 (\pix_in_int(2)(4)(6)  ), .I1 (
+# Info:          pix_in_int[6]), .I2 (\pix_in_int(0)(4)(6)  ), .I3 (nx16724z1)) ;
 # Info:          defparam slut_0_6.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_6" *)
-# Info:     LUT3 clut_0_6 (.O (nx16725z1), .I0 (\pix_in_int(2)(3)(6)  ), .I1 (
-# Info:          pix_in_int[6]), .I2 (\pix_in_int(0)(3)(6)  )) ;
+# Info:     LUT3 clut_0_6 (.O (nx16725z1), .I0 (\pix_in_int(2)(4)(6)  ), .I1 (
+# Info:          pix_in_int[6]), .I2 (\pix_in_int(0)(4)(6)  )) ;
 # Info:          defparam clut_0_6.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_6 (.O (nx8479z2), .CI (nx50039z1), .LI (nx50039z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_7" *)
-# Info:     LUT4 slut_0_7 (.O (nx50038z2), .I0 (\pix_in_int(2)(3)(7)  ), .I1 (
-# Info:          pix_in_int[7]), .I2 (\pix_in_int(0)(3)(7)  ), .I3 (nx16725z1)) ;
+# Info:     LUT4 slut_0_7 (.O (nx50038z2), .I0 (\pix_in_int(2)(4)(7)  ), .I1 (
+# Info:          pix_in_int[7]), .I2 (\pix_in_int(0)(4)(7)  ), .I3 (nx16725z1)) ;
 # Info:          defparam slut_0_7.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_slut_0_7" *)
-# Info:     LUT3 clut_0_7 (.O (nx50036z3), .I0 (\pix_in_int(2)(3)(7)  ), .I1 (
-# Info:          pix_in_int[7]), .I2 (\pix_in_int(0)(3)(7)  )) ;
+# Info:     LUT3 clut_0_7 (.O (nx50036z3), .I0 (\pix_in_int(2)(4)(7)  ), .I1 (
+# Info:          pix_in_int[7]), .I2 (\pix_in_int(0)(4)(7)  )) ;
 # Info:          defparam clut_0_7.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_7 (.O (nx8480z2), .CI (nx50038z1), .LI (nx50038z2)) ;
 # Info:     XORCY xorcy_0_9 (.O (nx8481z2), .CI (nx50036z1), .LI (nx50036z2)) ;
 # Info:     XORCY xorcy_0_9_1_0 (.O (nx51679z3), .CI (nx62787z1), .LI (nx8473z1)) ;
-# Info:     XORCY xorcy_2 (.O (\pix_out(3)_1_0(0)  ), .CI (nx8475z1), .LI (nx8475z3)) ;
-# Info:     XORCY xorcy_3 (.O (\pix_out(3)_1_0(1)  ), .CI (nx8476z1), .LI (nx8476z3)) ;
-# Info:     XORCY xorcy_4 (.O (\pix_out(3)_1_0(2)  ), .CI (nx8477z1), .LI (nx8477z3)) ;
-# Info:     XORCY xorcy_5 (.O (\pix_out(3)_1_0(3)  ), .CI (nx8478z1), .LI (nx8478z3)) ;
-# Info:     XORCY xorcy_6 (.O (\pix_out(3)_1_0(4)  ), .CI (nx8479z1), .LI (nx8479z3)) ;
-# Info:     XORCY xorcy_7 (.O (\pix_out(3)_1_0(5)  ), .CI (nx8480z1), .LI (nx8480z3)) ;
-# Info:     XORCY xorcy_8 (.O (\pix_out(3)_1_0(6)  ), .CI (nx8481z1), .LI (nx8481z3)) ;
-# Info:     XORCY xorcy_9 (.O (\pix_out(3)_1_0(7)  ), .CI (nx51679z1), .LI (nx51679z2)
+# Info:     XORCY xorcy_2 (.O (\pix_out(4)_1_0(0)  ), .CI (nx8475z1), .LI (nx8475z3)) ;
+# Info:     XORCY xorcy_3 (.O (\pix_out(4)_1_0(1)  ), .CI (nx8476z1), .LI (nx8476z3)) ;
+# Info:     XORCY xorcy_4 (.O (\pix_out(4)_1_0(2)  ), .CI (nx8477z1), .LI (nx8477z3)) ;
+# Info:     XORCY xorcy_5 (.O (\pix_out(4)_1_0(3)  ), .CI (nx8478z1), .LI (nx8478z3)) ;
+# Info:     XORCY xorcy_6 (.O (\pix_out(4)_1_0(4)  ), .CI (nx8479z1), .LI (nx8479z3)) ;
+# Info:     XORCY xorcy_7 (.O (\pix_out(4)_1_0(5)  ), .CI (nx8480z1), .LI (nx8480z3)) ;
+# Info:     XORCY xorcy_8 (.O (\pix_out(4)_1_0(6)  ), .CI (nx8481z1), .LI (nx8481z3)) ;
+# Info:     XORCY xorcy_9 (.O (\pix_out(4)_1_0(7)  ), .CI (nx51679z1), .LI (nx51679z2)
 # Info:           ) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_0" *)
-# Info:     LUT4 slut_0_0_1_0 (.O (nx22067z1), .I0 (\pix_in_int(2)(2)(0)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(0)  ), .I2 (\pix_in_int(0)(2)(0)  ), .I3 (nx8473z1)
+# Info:     LUT4 slut_0_0_1_0 (.O (nx22067z1), .I0 (\pix_in_int(2)(3)(0)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(0)  ), .I2 (\pix_in_int(0)(3)(0)  ), .I3 (nx8473z1)
 # Info:          ) ;
 # Info:          defparam slut_0_0_1_0.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_0" *)
-# Info:     LUT3 clut_0_0_1_1 (.O (nx36390z1), .I0 (\pix_in_int(2)(2)(0)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(0)  ), .I2 (\pix_in_int(0)(2)(0)  )) ;
+# Info:     LUT3 clut_0_0_1_1 (.O (nx36390z1), .I0 (\pix_in_int(2)(3)(0)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(0)  ), .I2 (\pix_in_int(0)(3)(0)  )) ;
 # Info:          defparam clut_0_0_1_1.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_0_1_3 (.O (nx54040z2), .CI (nx8473z1), .LI (nx22067z1)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_1" *)
-# Info:     LUT4 slut_0_1_1_4 (.O (nx27198z1), .I0 (\pix_in_int(2)(2)(1)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(1)  ), .I2 (\pix_in_int(0)(2)(1)  ), .I3 (nx36390z1)
+# Info:     LUT4 slut_0_1_1_4 (.O (nx27198z1), .I0 (\pix_in_int(2)(3)(1)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(1)  ), .I2 (\pix_in_int(0)(3)(1)  ), .I3 (nx36390z1)
 # Info:          ) ;
 # Info:          defparam slut_0_1_1_4.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_1" *)
-# Info:     LUT3 clut_0_1_1_5 (.O (nx41521z1), .I0 (\pix_in_int(2)(2)(1)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(1)  ), .I2 (\pix_in_int(0)(2)(1)  )) ;
+# Info:     LUT3 clut_0_1_1_5 (.O (nx41521z1), .I0 (\pix_in_int(2)(3)(1)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(1)  ), .I2 (\pix_in_int(0)(3)(1)  )) ;
 # Info:          defparam clut_0_1_1_5.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_1_1_7 (.O (nx60838z2), .CI (nx8473z1), .LI (nx27198z1)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_2" *)
-# Info:     LUT4 slut_0_2_1_8 (.O (nx1778z2), .I0 (\pix_in_int(2)(2)(2)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(2)  ), .I2 (\pix_in_int(0)(2)(2)  ), .I3 (nx41521z1)
+# Info:     LUT4 slut_0_2_1_8 (.O (nx1778z2), .I0 (\pix_in_int(2)(3)(2)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(2)  ), .I2 (\pix_in_int(0)(3)(2)  ), .I3 (nx41521z1)
 # Info:          ) ;
 # Info:          defparam slut_0_2_1_8.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_2" *)
-# Info:     LUT3 clut_0_2_1_9 (.O (nx7599z1), .I0 (\pix_in_int(2)(2)(2)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(2)  ), .I2 (\pix_in_int(0)(2)(2)  )) ;
+# Info:     LUT3 clut_0_2_1_9 (.O (nx7599z1), .I0 (\pix_in_int(2)(3)(2)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(2)  ), .I2 (\pix_in_int(0)(3)(2)  )) ;
 # Info:          defparam clut_0_2_1_9.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_2_1_11 (.O (nx3087z2), .CI (nx1778z1), .LI (nx1778z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_3" *)
-# Info:     LUT4 slut_0_3_1_12 (.O (nx59531z2), .I0 (\pix_in_int(2)(2)(3)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(3)  ), .I2 (\pix_in_int(0)(2)(3)  ), .I3 (nx7599z1)
+# Info:     LUT4 slut_0_3_1_12 (.O (nx59531z2), .I0 (\pix_in_int(2)(3)(3)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(3)  ), .I2 (\pix_in_int(0)(3)(3)  ), .I3 (nx7599z1)
 # Info:          ) ;
 # Info:          defparam slut_0_3_1_12.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_3" *)
-# Info:     LUT3 clut_0_3_1_13 (.O (nx184z1), .I0 (\pix_in_int(2)(2)(3)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(3)  ), .I2 (\pix_in_int(0)(2)(3)  )) ;
+# Info:     LUT3 clut_0_3_1_13 (.O (nx184z1), .I0 (\pix_in_int(2)(3)(3)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(3)  ), .I2 (\pix_in_int(0)(3)(3)  )) ;
 # Info:          defparam clut_0_3_1_13.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_3_1_15 (.O (nx54664z2), .CI (nx59531z1), .LI (nx59531z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_4" *)
-# Info:     LUT4 slut_0_4_1_16 (.O (nx51748z2), .I0 (\pix_in_int(2)(2)(4)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(4)  ), .I2 (\pix_in_int(0)(2)(4)  ), .I3 (nx184z1)) ;
+# Info:     LUT4 slut_0_4_1_16 (.O (nx51748z2), .I0 (\pix_in_int(2)(3)(4)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(4)  ), .I2 (\pix_in_int(0)(3)(4)  ), .I3 (nx184z1)) ;
 # Info:          defparam slut_0_4_1_16.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_4" *)
-# Info:     LUT3 clut_0_4_1_17 (.O (nx6980z1), .I0 (\pix_in_int(2)(2)(4)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(4)  ), .I2 (\pix_in_int(0)(2)(4)  )) ;
+# Info:     LUT3 clut_0_4_1_17 (.O (nx6980z1), .I0 (\pix_in_int(2)(3)(4)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(4)  ), .I2 (\pix_in_int(0)(3)(4)  )) ;
 # Info:          defparam clut_0_4_1_17.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_4_1_19 (.O (nx46879z2), .CI (nx51748z1), .LI (nx51748z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_5" *)
-# Info:     LUT4 slut_0_5_1_20 (.O (nx44952z2), .I0 (\pix_in_int(2)(2)(5)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(5)  ), .I2 (\pix_in_int(0)(2)(5)  ), .I3 (nx6980z1)
+# Info:     LUT4 slut_0_5_1_20 (.O (nx44952z2), .I0 (\pix_in_int(2)(3)(5)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(5)  ), .I2 (\pix_in_int(0)(3)(5)  ), .I3 (nx6980z1)
 # Info:          ) ;
 # Info:          defparam slut_0_5_1_20.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_5" *)
-# Info:     LUT3 clut_0_5_1_21 (.O (nx14763z1), .I0 (\pix_in_int(2)(2)(5)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(5)  ), .I2 (\pix_in_int(0)(2)(5)  )) ;
+# Info:     LUT3 clut_0_5_1_21 (.O (nx14763z1), .I0 (\pix_in_int(2)(3)(5)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(5)  ), .I2 (\pix_in_int(0)(3)(5)  )) ;
 # Info:          defparam clut_0_5_1_21.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_5_1_23 (.O (nx39094z2), .CI (nx44952z1), .LI (nx44952z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_6" *)
-# Info:     LUT4 slut_0_6_1_24 (.O (nx37169z2), .I0 (\pix_in_int(2)(2)(6)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(6)  ), .I2 (\pix_in_int(0)(2)(6)  ), .I3 (nx14763z1)
+# Info:     LUT4 slut_0_6_1_24 (.O (nx37169z2), .I0 (\pix_in_int(2)(3)(6)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(6)  ), .I2 (\pix_in_int(0)(3)(6)  ), .I3 (nx14763z1)
 # Info:          ) ;
 # Info:          defparam slut_0_6_1_24.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_6" *)
-# Info:     LUT3 clut_0_6_1_25 (.O (nx22546z1), .I0 (\pix_in_int(2)(2)(6)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(6)  ), .I2 (\pix_in_int(0)(2)(6)  )) ;
+# Info:     LUT3 clut_0_6_1_25 (.O (nx22546z1), .I0 (\pix_in_int(2)(3)(6)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(6)  ), .I2 (\pix_in_int(0)(3)(6)  )) ;
 # Info:          defparam clut_0_6_1_25.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_6_1_27 (.O (nx32296z2), .CI (nx37169z1), .LI (nx37169z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_7" *)
-# Info:     LUT4 slut_0_7_1_28 (.O (nx35163z2), .I0 (\pix_in_int(2)(2)(7)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(7)  ), .I2 (\pix_in_int(0)(2)(7)  ), .I3 (nx22546z1)
+# Info:     LUT4 slut_0_7_1_28 (.O (nx35163z2), .I0 (\pix_in_int(2)(3)(7)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(7)  ), .I2 (\pix_in_int(0)(3)(7)  ), .I3 (nx22546z1)
 # Info:          ) ;
 # Info:          defparam slut_0_7_1_28.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_0_slut_0_7" *)
-# Info:     LUT3 clut_0_7_1_29 (.O (nx50733z3), .I0 (\pix_in_int(2)(2)(7)  ), .I1 (
-# Info:          \pix_in_int(3)(2)(7)  ), .I2 (\pix_in_int(0)(2)(7)  )) ;
+# Info:     LUT3 clut_0_7_1_29 (.O (nx50733z3), .I0 (\pix_in_int(2)(3)(7)  ), .I1 (
+# Info:          \pix_in_int(3)(3)(7)  ), .I2 (\pix_in_int(0)(3)(7)  )) ;
 # Info:          defparam clut_0_7_1_29.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_7_1_31 (.O (nx24511z2), .CI (nx35163z1), .LI (nx35163z2)) ;
 # Info:     XORCY xorcy_0_9_1_35 (.O (nx16726z2), .CI (nx50733z1), .LI (nx50733z2)) ;
 # Info:     XORCY xorcy_0_9_1_0_1_37 (.O (nx34217z3), .CI (nx27816z1), .LI (nx8473z1)) ;
-# Info:     XORCY xorcy_2_1_42 (.O (\pix_out(2)_1_0(0)  ), .CI (nx3087z1), .LI (nx3087z3
+# Info:     XORCY xorcy_2_1_42 (.O (\pix_out(3)_1_0(0)  ), .CI (nx3087z1), .LI (nx3087z3
 # Info:           )) ;
-# Info:     XORCY xorcy_3_1_44 (.O (\pix_out(2)_1_0(1)  ), .CI (nx54664z1), .LI (
+# Info:     XORCY xorcy_3_1_44 (.O (\pix_out(3)_1_0(1)  ), .CI (nx54664z1), .LI (
 # Info:           nx54664z3)) ;
-# Info:     XORCY xorcy_4_1_46 (.O (\pix_out(2)_1_0(2)  ), .CI (nx46879z1), .LI (
+# Info:     XORCY xorcy_4_1_46 (.O (\pix_out(3)_1_0(2)  ), .CI (nx46879z1), .LI (
 # Info:           nx46879z3)) ;
-# Info:     XORCY xorcy_5_1_48 (.O (\pix_out(2)_1_0(3)  ), .CI (nx39094z1), .LI (
+# Info:     XORCY xorcy_5_1_48 (.O (\pix_out(3)_1_0(3)  ), .CI (nx39094z1), .LI (
 # Info:           nx39094z3)) ;
-# Info:     XORCY xorcy_6_1_50 (.O (\pix_out(2)_1_0(4)  ), .CI (nx32296z1), .LI (
+# Info:     XORCY xorcy_6_1_50 (.O (\pix_out(3)_1_0(4)  ), .CI (nx32296z1), .LI (
 # Info:           nx32296z3)) ;
-# Info:     XORCY xorcy_7_1_52 (.O (\pix_out(2)_1_0(5)  ), .CI (nx24511z1), .LI (
+# Info:     XORCY xorcy_7_1_52 (.O (\pix_out(3)_1_0(5)  ), .CI (nx24511z1), .LI (
 # Info:           nx24511z3)) ;
-# Info:     XORCY xorcy_8_1_54 (.O (\pix_out(2)_1_0(6)  ), .CI (nx16726z1), .LI (
+# Info:     XORCY xorcy_8_1_54 (.O (\pix_out(3)_1_0(6)  ), .CI (nx16726z1), .LI (
 # Info:           nx16726z3)) ;
-# Info:     XORCY xorcy_9_1_56 (.O (\pix_out(2)_1_0(7)  ), .CI (nx34217z1), .LI (
+# Info:     XORCY xorcy_9_1_56 (.O (\pix_out(3)_1_0(7)  ), .CI (nx34217z1), .LI (
 # Info:           nx34217z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_0" *)
-# Info:     LUT4 slut_0_0_1_57 (.O (nx43200z1), .I0 (\pix_in_int(2)(1)(0)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(0)  ), .I2 (\pix_in_int(0)(1)(0)  ), .I3 (nx8473z1)
+# Info:     LUT4 slut_0_0_1_57 (.O (nx43200z1), .I0 (\pix_in_int(2)(2)(0)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(0)  ), .I2 (\pix_in_int(0)(2)(0)  ), .I3 (nx8473z1)
 # Info:          ) ;
 # Info:          defparam slut_0_0_1_57.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_0" *)
-# Info:     LUT3 clut_0_0_1_58 (.O (nx28157z1), .I0 (\pix_in_int(2)(1)(0)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(0)  ), .I2 (\pix_in_int(0)(1)(0)  )) ;
+# Info:     LUT3 clut_0_0_1_58 (.O (nx28157z1), .I0 (\pix_in_int(2)(2)(0)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(0)  ), .I2 (\pix_in_int(0)(2)(0)  )) ;
 # Info:          defparam clut_0_0_1_58.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_0_1_60 (.O (nx48061z2), .CI (nx8473z1), .LI (nx43200z1)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_1" *)
-# Info:     LUT4 slut_0_1_1_61 (.O (nx14553z1), .I0 (\pix_in_int(2)(1)(1)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(1)  ), .I2 (\pix_in_int(0)(1)(1)  ), .I3 (nx28157z1)
+# Info:     LUT4 slut_0_1_1_61 (.O (nx14553z1), .I0 (\pix_in_int(2)(2)(1)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(1)  ), .I2 (\pix_in_int(0)(2)(1)  ), .I3 (nx28157z1)
 # Info:          ) ;
 # Info:          defparam slut_0_1_1_61.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_1" *)
-# Info:     LUT3 clut_0_1_1_62 (.O (nx20374z1), .I0 (\pix_in_int(2)(1)(1)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(1)  ), .I2 (\pix_in_int(0)(1)(1)  )) ;
+# Info:     LUT3 clut_0_1_1_62 (.O (nx20374z1), .I0 (\pix_in_int(2)(2)(1)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(1)  ), .I2 (\pix_in_int(0)(2)(1)  )) ;
 # Info:          defparam clut_0_1_1_62.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_1_1_64 (.O (nx55846z2), .CI (nx8473z1), .LI (nx14553z1)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_2" *)
-# Info:     LUT4 slut_0_2_1_65 (.O (nx6770z2), .I0 (\pix_in_int(2)(1)(2)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(2)  ), .I2 (\pix_in_int(0)(1)(2)  ), .I3 (nx20374z1)
+# Info:     LUT4 slut_0_2_1_65 (.O (nx6770z2), .I0 (\pix_in_int(2)(2)(2)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(2)  ), .I2 (\pix_in_int(0)(2)(2)  ), .I3 (nx20374z1)
 # Info:          ) ;
 # Info:          defparam slut_0_2_1_65.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_2" *)
-# Info:     LUT3 clut_0_2_1_66 (.O (nx12591z1), .I0 (\pix_in_int(2)(1)(2)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(2)  ), .I2 (\pix_in_int(0)(1)(2)  )) ;
+# Info:     LUT3 clut_0_2_1_66 (.O (nx12591z1), .I0 (\pix_in_int(2)(2)(2)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(2)  ), .I2 (\pix_in_int(0)(2)(2)  )) ;
 # Info:          defparam clut_0_2_1_66.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_2_1_68 (.O (nx32139z2), .CI (nx6770z1), .LI (nx6770z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_3" *)
-# Info:     LUT4 slut_0_3_1_69 (.O (nx65510z2), .I0 (\pix_in_int(2)(1)(3)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(3)  ), .I2 (\pix_in_int(0)(1)(3)  ), .I3 (nx12591z1)
+# Info:     LUT4 slut_0_3_1_69 (.O (nx65510z2), .I0 (\pix_in_int(2)(2)(3)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(3)  ), .I2 (\pix_in_int(0)(2)(3)  ), .I3 (nx12591z1)
 # Info:          ) ;
 # Info:          defparam slut_0_3_1_69.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_3" *)
-# Info:     LUT3 clut_0_3_1_70 (.O (nx59741z1), .I0 (\pix_in_int(2)(1)(3)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(3)  ), .I2 (\pix_in_int(0)(1)(3)  )) ;
+# Info:     LUT3 clut_0_3_1_70 (.O (nx59741z1), .I0 (\pix_in_int(2)(2)(3)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(3)  ), .I2 (\pix_in_int(0)(2)(3)  )) ;
 # Info:          defparam clut_0_3_1_70.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_3_1_72 (.O (nx63786z2), .CI (nx65510z1), .LI (nx65510z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_4" *)
-# Info:     LUT4 slut_0_4_1_73 (.O (nx57727z2), .I0 (\pix_in_int(2)(1)(4)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(4)  ), .I2 (\pix_in_int(0)(1)(4)  ), .I3 (nx59741z1)
+# Info:     LUT4 slut_0_4_1_73 (.O (nx57727z2), .I0 (\pix_in_int(2)(2)(4)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(4)  ), .I2 (\pix_in_int(0)(2)(4)  ), .I3 (nx59741z1)
 # Info:          ) ;
 # Info:          defparam slut_0_4_1_73.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_4" *)
-# Info:     LUT3 clut_0_4_1_74 (.O (nx1988z1), .I0 (\pix_in_int(2)(1)(4)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(4)  ), .I2 (\pix_in_int(0)(1)(4)  )) ;
+# Info:     LUT3 clut_0_4_1_74 (.O (nx1988z1), .I0 (\pix_in_int(2)(2)(4)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(4)  ), .I2 (\pix_in_int(0)(2)(4)  )) ;
 # Info:          defparam clut_0_4_1_74.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_4_1_76 (.O (nx28639z2), .CI (nx57727z1), .LI (nx57727z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_5" *)
-# Info:     LUT4 slut_0_5_1_77 (.O (nx50931z2), .I0 (\pix_in_int(2)(1)(5)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(5)  ), .I2 (\pix_in_int(0)(1)(5)  ), .I3 (nx1988z1)
+# Info:     LUT4 slut_0_5_1_77 (.O (nx50931z2), .I0 (\pix_in_int(2)(2)(5)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(5)  ), .I2 (\pix_in_int(0)(2)(5)  ), .I3 (nx1988z1)
 # Info:          ) ;
 # Info:          defparam slut_0_5_1_77.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_5" *)
-# Info:     LUT3 clut_0_5_1_78 (.O (nx8784z1), .I0 (\pix_in_int(2)(1)(5)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(5)  ), .I2 (\pix_in_int(0)(1)(5)  )) ;
+# Info:     LUT3 clut_0_5_1_78 (.O (nx8784z1), .I0 (\pix_in_int(2)(2)(5)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(5)  ), .I2 (\pix_in_int(0)(2)(5)  )) ;
 # Info:          defparam clut_0_5_1_78.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_5_1_80 (.O (nx6508z2), .CI (nx50931z1), .LI (nx50931z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_6" *)
-# Info:     LUT4 slut_0_6_1_81 (.O (nx43148z2), .I0 (\pix_in_int(2)(1)(6)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(6)  ), .I2 (\pix_in_int(0)(1)(6)  ), .I3 (nx8784z1)
+# Info:     LUT4 slut_0_6_1_81 (.O (nx43148z2), .I0 (\pix_in_int(2)(2)(6)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(6)  ), .I2 (\pix_in_int(0)(2)(6)  ), .I3 (nx8784z1)
 # Info:          ) ;
 # Info:          defparam slut_0_6_1_81.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_6" *)
-# Info:     LUT3 clut_0_6_1_82 (.O (nx16567z1), .I0 (\pix_in_int(2)(1)(6)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(6)  ), .I2 (\pix_in_int(0)(1)(6)  )) ;
+# Info:     LUT3 clut_0_6_1_82 (.O (nx16567z1), .I0 (\pix_in_int(2)(2)(6)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(6)  ), .I2 (\pix_in_int(0)(2)(6)  )) ;
 # Info:          defparam clut_0_6_1_82.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_6_1_84 (.O (nx41655z2), .CI (nx43148z1), .LI (nx43148z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_7" *)
-# Info:     LUT4 slut_0_7_1_85 (.O (nx30171z2), .I0 (\pix_in_int(2)(1)(7)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(7)  ), .I2 (\pix_in_int(0)(1)(7)  ), .I3 (nx16567z1)
+# Info:     LUT4 slut_0_7_1_85 (.O (nx30171z2), .I0 (\pix_in_int(2)(2)(7)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(7)  ), .I2 (\pix_in_int(0)(2)(7)  ), .I3 (nx16567z1)
 # Info:          ) ;
 # Info:          defparam slut_0_7_1_85.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_1_slut_0_7" *)
-# Info:     LUT3 clut_0_7_1_86 (.O (nx44754z3), .I0 (\pix_in_int(2)(1)(7)  ), .I1 (
-# Info:          \pix_in_int(3)(1)(7)  ), .I2 (\pix_in_int(0)(1)(7)  )) ;
+# Info:     LUT3 clut_0_7_1_86 (.O (nx44754z3), .I0 (\pix_in_int(2)(2)(7)  ), .I1 (
+# Info:          \pix_in_int(3)(2)(7)  ), .I2 (\pix_in_int(0)(2)(7)  )) ;
 # Info:          defparam clut_0_7_1_86.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_7_1_88 (.O (nx53283z2), .CI (nx30171z1), .LI (nx30171z2)) ;
 # Info:     XORCY xorcy_0_9_1_92 (.O (nx18136z2), .CI (nx44754z1), .LI (nx44754z2)) ;
 # Info:     XORCY xorcy_0_9_1_0_1_94 (.O (nx18903z3), .CI (nx21837z1), .LI (nx8473z1)) ;
-# Info:     XORCY xorcy_2_1_99 (.O (\pix_out(1)_1_0(0)  ), .CI (nx32139z1), .LI (
+# Info:     XORCY xorcy_2_1_99 (.O (\pix_out(2)_1_0(0)  ), .CI (nx32139z1), .LI (
 # Info:           nx32139z3)) ;
-# Info:     XORCY xorcy_3_1_101 (.O (\pix_out(1)_1_0(1)  ), .CI (nx63786z1), .LI (
+# Info:     XORCY xorcy_3_1_101 (.O (\pix_out(2)_1_0(1)  ), .CI (nx63786z1), .LI (
 # Info:           nx63786z3)) ;
-# Info:     XORCY xorcy_4_1_103 (.O (\pix_out(1)_1_0(2)  ), .CI (nx28639z1), .LI (
+# Info:     XORCY xorcy_4_1_103 (.O (\pix_out(2)_1_0(2)  ), .CI (nx28639z1), .LI (
 # Info:           nx28639z3)) ;
-# Info:     XORCY xorcy_5_1_105 (.O (\pix_out(1)_1_0(3)  ), .CI (nx6508z1), .LI (
+# Info:     XORCY xorcy_5_1_105 (.O (\pix_out(2)_1_0(3)  ), .CI (nx6508z1), .LI (
 # Info:           nx6508z3)) ;
-# Info:     XORCY xorcy_6_1_107 (.O (\pix_out(1)_1_0(4)  ), .CI (nx41655z1), .LI (
+# Info:     XORCY xorcy_6_1_107 (.O (\pix_out(2)_1_0(4)  ), .CI (nx41655z1), .LI (
 # Info:           nx41655z3)) ;
-# Info:     XORCY xorcy_7_1_109 (.O (\pix_out(1)_1_0(5)  ), .CI (nx53283z1), .LI (
+# Info:     XORCY xorcy_7_1_109 (.O (\pix_out(2)_1_0(5)  ), .CI (nx53283z1), .LI (
 # Info:           nx53283z3)) ;
-# Info:     XORCY xorcy_8_1_111 (.O (\pix_out(1)_1_0(6)  ), .CI (nx18136z1), .LI (
+# Info:     XORCY xorcy_8_1_111 (.O (\pix_out(2)_1_0(6)  ), .CI (nx18136z1), .LI (
 # Info:           nx18136z3)) ;
-# Info:     XORCY xorcy_9_1_113 (.O (\pix_out(1)_1_0(7)  ), .CI (nx18903z1), .LI (
+# Info:     XORCY xorcy_9_1_113 (.O (\pix_out(2)_1_0(7)  ), .CI (nx18903z1), .LI (
 # Info:           nx18903z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_0" *)
-# Info:     LUT4 slut_0_0_1_114 (.O (nx64031z1), .I0 (\pix_in_int(2)(0)(0)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(0)  ), .I2 (\pix_in_int(0)(0)(0)  ), .I3 (nx8473z1)
+# Info:     LUT4 slut_0_0_1_114 (.O (nx64031z1), .I0 (\pix_in_int(2)(1)(0)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(0)  ), .I2 (\pix_in_int(0)(1)(0)  ), .I3 (nx8473z1)
 # Info:          ) ;
 # Info:          defparam slut_0_0_1_114.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_0" *)
-# Info:     LUT3 clut_0_0_1_115 (.O (nx31668z1), .I0 (\pix_in_int(2)(0)(0)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(0)  ), .I2 (\pix_in_int(0)(0)(0)  )) ;
+# Info:     LUT3 clut_0_0_1_115 (.O (nx31668z1), .I0 (\pix_in_int(2)(1)(0)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(0)  ), .I2 (\pix_in_int(0)(1)(0)  )) ;
 # Info:          defparam clut_0_0_1_115.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_0_1_117 (.O (nx33163z2), .CI (nx8473z1), .LI (nx64031z1)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_1" *)
-# Info:     LUT4 slut_0_1_1_118 (.O (nx34631z1), .I0 (\pix_in_int(2)(0)(1)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(1)  ), .I2 (\pix_in_int(0)(0)(1)  ), .I3 (nx31668z1)
+# Info:     LUT4 slut_0_1_1_118 (.O (nx34631z1), .I0 (\pix_in_int(2)(1)(1)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(1)  ), .I2 (\pix_in_int(0)(1)(1)  ), .I3 (nx31668z1)
 # Info:          ) ;
 # Info:          defparam slut_0_1_1_118.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_1" *)
-# Info:     LUT3 clut_0_1_1_119 (.O (nx4468z1), .I0 (\pix_in_int(2)(0)(1)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(1)  ), .I2 (\pix_in_int(0)(0)(1)  )) ;
+# Info:     LUT3 clut_0_1_1_119 (.O (nx4468z1), .I0 (\pix_in_int(2)(1)(1)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(1)  ), .I2 (\pix_in_int(0)(1)(1)  )) ;
 # Info:          defparam clut_0_1_1_119.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_1_1_121 (.O (nx1984z2), .CI (nx8473z1), .LI (nx34631z1)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_2" *)
-# Info:     LUT4 slut_0_2_1_122 (.O (nx61292z2), .I0 (\pix_in_int(2)(0)(2)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(2)  ), .I2 (\pix_in_int(0)(0)(2)  ), .I3 (nx4468z1)
+# Info:     LUT4 slut_0_2_1_122 (.O (nx61292z2), .I0 (\pix_in_int(2)(1)(2)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(2)  ), .I2 (\pix_in_int(0)(1)(2)  ), .I3 (nx4468z1)
 # Info:          ) ;
 # Info:          defparam slut_0_2_1_122.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_2" *)
-# Info:     LUT3 clut_0_2_1_123 (.O (nx39617z1), .I0 (\pix_in_int(2)(0)(2)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(2)  ), .I2 (\pix_in_int(0)(0)(2)  )) ;
+# Info:     LUT3 clut_0_2_1_123 (.O (nx39617z1), .I0 (\pix_in_int(2)(1)(2)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(2)  ), .I2 (\pix_in_int(0)(1)(2)  )) ;
 # Info:          defparam clut_0_2_1_123.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_2_1_125 (.O (nx37131z2), .CI (nx61292z1), .LI (nx61292z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_3" *)
-# Info:     LUT4 slut_0_3_1_126 (.O (nx26143z2), .I0 (\pix_in_int(2)(0)(3)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(3)  ), .I2 (\pix_in_int(0)(0)(3)  ), .I3 (nx39617z1)
+# Info:     LUT4 slut_0_3_1_126 (.O (nx26143z2), .I0 (\pix_in_int(2)(1)(3)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(3)  ), .I2 (\pix_in_int(0)(1)(3)  ), .I3 (nx39617z1)
 # Info:          ) ;
 # Info:          defparam slut_0_3_1_126.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_3" *)
-# Info:     LUT3 clut_0_3_1_127 (.O (nx55319z1), .I0 (\pix_in_int(2)(0)(3)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(3)  ), .I2 (\pix_in_int(0)(0)(3)  )) ;
+# Info:     LUT3 clut_0_3_1_127 (.O (nx55319z1), .I0 (\pix_in_int(2)(1)(3)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(3)  ), .I2 (\pix_in_int(0)(1)(3)  )) ;
 # Info:          defparam clut_0_3_1_127.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_3_1_129 (.O (nx58794z2), .CI (nx26143z1), .LI (nx26143z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_4" *)
-# Info:     LUT4 slut_0_4_1_130 (.O (nx9993z2), .I0 (\pix_in_int(2)(0)(4)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(4)  ), .I2 (\pix_in_int(0)(0)(4)  ), .I3 (nx55319z1)
+# Info:     LUT4 slut_0_4_1_130 (.O (nx9993z2), .I0 (\pix_in_int(2)(1)(4)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(4)  ), .I2 (\pix_in_int(0)(1)(4)  ), .I3 (nx55319z1)
 # Info:          ) ;
 # Info:          defparam slut_0_4_1_130.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_4" *)
-# Info:     LUT3 clut_0_4_1_131 (.O (nx20170z1), .I0 (\pix_in_int(2)(0)(4)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(4)  ), .I2 (\pix_in_int(0)(0)(4)  )) ;
+# Info:     LUT3 clut_0_4_1_131 (.O (nx20170z1), .I0 (\pix_in_int(2)(1)(4)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(4)  ), .I2 (\pix_in_int(0)(1)(4)  )) ;
 # Info:          defparam clut_0_4_1_131.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_4_1_133 (.O (nx22660z2), .CI (nx9993z1), .LI (nx9993z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_5" *)
-# Info:     LUT4 slut_0_5_1_134 (.O (nx45142z2), .I0 (\pix_in_int(2)(0)(5)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(5)  ), .I2 (\pix_in_int(0)(0)(5)  ), .I3 (nx20170z1)
+# Info:     LUT4 slut_0_5_1_134 (.O (nx45142z2), .I0 (\pix_in_int(2)(1)(5)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(5)  ), .I2 (\pix_in_int(0)(1)(5)  ), .I3 (nx20170z1)
 # Info:          ) ;
 # Info:          defparam slut_0_5_1_134.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_5" *)
-# Info:     LUT3 clut_0_5_1_135 (.O (nx14979z1), .I0 (\pix_in_int(2)(0)(5)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(5)  ), .I2 (\pix_in_int(0)(0)(5)  )) ;
+# Info:     LUT3 clut_0_5_1_135 (.O (nx14979z1), .I0 (\pix_in_int(2)(1)(5)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(5)  ), .I2 (\pix_in_int(0)(1)(5)  )) ;
 # Info:          defparam clut_0_5_1_135.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_5_1_137 (.O (nx12487z2), .CI (nx45142z1), .LI (nx45142z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_6" *)
-# Info:     LUT4 slut_0_6_1_138 (.O (nx49794z2), .I0 (\pix_in_int(2)(0)(6)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(6)  ), .I2 (\pix_in_int(0)(0)(6)  ), .I3 (nx14979z1)
+# Info:     LUT4 slut_0_6_1_138 (.O (nx49794z2), .I0 (\pix_in_int(2)(1)(6)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(6)  ), .I2 (\pix_in_int(0)(1)(6)  ), .I3 (nx14979z1)
 # Info:          ) ;
 # Info:          defparam slut_0_6_1_138.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_6" *)
-# Info:     LUT3 clut_0_6_1_139 (.O (nx51115z1), .I0 (\pix_in_int(2)(0)(6)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(6)  ), .I2 (\pix_in_int(0)(0)(6)  )) ;
+# Info:     LUT3 clut_0_6_1_139 (.O (nx51115z1), .I0 (\pix_in_int(2)(1)(6)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(6)  ), .I2 (\pix_in_int(0)(1)(6)  )) ;
 # Info:          defparam clut_0_6_1_139.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_6_1_141 (.O (nx47634z2), .CI (nx49794z1), .LI (nx49794z2)) ;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_7" *)
-# Info:     LUT4 slut_0_7_1_142 (.O (nx14645z2), .I0 (\pix_in_int(2)(0)(7)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(7)  ), .I2 (\pix_in_int(0)(0)(7)  ), .I3 (nx51115z1)
+# Info:     LUT4 slut_0_7_1_142 (.O (nx14645z2), .I0 (\pix_in_int(2)(1)(7)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(7)  ), .I2 (\pix_in_int(0)(1)(7)  ), .I3 (nx51115z1)
 # Info:          ) ;
 # Info:          defparam slut_0_7_1_142.INIT = 16'h6996;
 # Info:     (* HLUTNM = "modgen_adderblock_1_2_slut_0_7" *)
-# Info:     LUT3 clut_0_7_1_143 (.O (nx55649z3), .I0 (\pix_in_int(2)(0)(7)  ), .I1 (
-# Info:          \pix_in_int(3)(0)(7)  ), .I2 (\pix_in_int(0)(0)(7)  )) ;
+# Info:     LUT3 clut_0_7_1_143 (.O (nx55649z3), .I0 (\pix_in_int(2)(1)(7)  ), .I1 (
+# Info:          \pix_in_int(3)(1)(7)  ), .I2 (\pix_in_int(0)(1)(7)  )) ;
 # Info:          defparam clut_0_7_1_143.INIT = 8'hE8;
 # Info:     XORCY xorcy_0_7_1_145 (.O (nx48291z2), .CI (nx14645z1), .LI (nx14645z2)) ;
 # Info:     XORCY xorcy_0_9_1_149 (.O (nx13144z2), .CI (nx55649z1), .LI (nx55649z2)) ;
 # Info:     XORCY xorcy_0_9_1_0_1_151 (.O (nx12924z3), .CI (nx34707z1), .LI (nx8473z1)
 # Info:           ) ;
-# Info:     XORCY xorcy_2_1_156 (.O (\pix_out(0)_1_0(0)  ), .CI (nx37131z1), .LI (
+# Info:     XORCY xorcy_2_1_156 (.O (\pix_out(1)_1_0(0)  ), .CI (nx37131z1), .LI (
 # Info:           nx37131z3)) ;
-# Info:     XORCY xorcy_3_1_158 (.O (\pix_out(0)_1_0(1)  ), .CI (nx58794z1), .LI (
+# Info:     XORCY xorcy_3_1_158 (.O (\pix_out(1)_1_0(1)  ), .CI (nx58794z1), .LI (
 # Info:           nx58794z3)) ;
-# Info:     XORCY xorcy_4_1_160 (.O (\pix_out(0)_1_0(2)  ), .CI (nx22660z1), .LI (
+# Info:     XORCY xorcy_4_1_160 (.O (\pix_out(1)_1_0(2)  ), .CI (nx22660z1), .LI (
 # Info:           nx22660z3)) ;
-# Info:     XORCY xorcy_5_1_162 (.O (\pix_out(0)_1_0(3)  ), .CI (nx12487z1), .LI (
+# Info:     XORCY xorcy_5_1_162 (.O (\pix_out(1)_1_0(3)  ), .CI (nx12487z1), .LI (
 # Info:           nx12487z3)) ;
-# Info:     XORCY xorcy_6_1_164 (.O (\pix_out(0)_1_0(4)  ), .CI (nx47634z1), .LI (
+# Info:     XORCY xorcy_6_1_164 (.O (\pix_out(1)_1_0(4)  ), .CI (nx47634z1), .LI (
 # Info:           nx47634z3)) ;
-# Info:     XORCY xorcy_7_1_166 (.O (\pix_out(0)_1_0(5)  ), .CI (nx48291z1), .LI (
+# Info:     XORCY xorcy_7_1_166 (.O (\pix_out(1)_1_0(5)  ), .CI (nx48291z1), .LI (
 # Info:           nx48291z3)) ;
-# Info:     XORCY xorcy_8_1_168 (.O (\pix_out(0)_1_0(6)  ), .CI (nx13144z1), .LI (
+# Info:     XORCY xorcy_8_1_168 (.O (\pix_out(1)_1_0(6)  ), .CI (nx13144z1), .LI (
 # Info:           nx13144z3)) ;
-# Info:     XORCY xorcy_9_1_170 (.O (\pix_out(0)_1_0(7)  ), .CI (nx12924z1), .LI (
+# Info:     XORCY xorcy_9_1_170 (.O (\pix_out(1)_1_0(7)  ), .CI (nx12924z1), .LI (
 # Info:           nx12924z2)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_0" *)
+# Info:     LUT4 slut_0_0_1_171 (.O (nx4474z1), .I0 (\pix_in_int(2)(0)(0)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(0)  ), .I2 (\pix_in_int(0)(0)(0)  ), .I3 (nx8473z1)
+# Info:          ) ;
+# Info:          defparam slut_0_0_1_171.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_0" *)
+# Info:     LUT3 clut_0_0_1_172 (.O (nx25689z1), .I0 (\pix_in_int(2)(0)(0)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(0)  ), .I2 (\pix_in_int(0)(0)(0)  )) ;
+# Info:          defparam clut_0_0_1_172.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_0_1_174 (.O (nx26185z2), .CI (nx8473z1), .LI (nx4474z1)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_1" *)
+# Info:     LUT4 slut_0_1_1_175 (.O (nx39623z1), .I0 (\pix_in_int(2)(0)(1)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(1)  ), .I2 (\pix_in_int(0)(0)(1)  ), .I3 (nx25689z1)
+# Info:          ) ;
+# Info:          defparam slut_0_1_1_175.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_1" *)
+# Info:     LUT3 clut_0_1_1_176 (.O (nx9460z1), .I0 (\pix_in_int(2)(0)(1)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(1)  ), .I2 (\pix_in_int(0)(0)(1)  )) ;
+# Info:          defparam clut_0_1_1_176.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_1_1_178 (.O (nx8962z2), .CI (nx8473z1), .LI (nx39623z1)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_2" *)
+# Info:     LUT4 slut_0_2_1_179 (.O (nx55313z2), .I0 (\pix_in_int(2)(0)(2)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(2)  ), .I2 (\pix_in_int(0)(0)(2)  ), .I3 (nx9460z1)
+# Info:          ) ;
+# Info:          defparam slut_0_2_1_179.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_2" *)
+# Info:     LUT3 clut_0_2_1_180 (.O (nx45596z1), .I0 (\pix_in_int(2)(0)(2)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(2)  ), .I2 (\pix_in_int(0)(0)(2)  )) ;
+# Info:          defparam clut_0_2_1_180.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_2_1_182 (.O (nx44109z2), .CI (nx55313z1), .LI (nx55313z2)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_3" *)
+# Info:     LUT4 slut_0_3_1_183 (.O (nx20164z2), .I0 (\pix_in_int(2)(0)(3)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(3)  ), .I2 (\pix_in_int(0)(0)(3)  ), .I3 (nx45596z1)
+# Info:          ) ;
+# Info:          defparam slut_0_3_1_183.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_3" *)
+# Info:     LUT3 clut_0_3_1_184 (.O (nx50327z1), .I0 (\pix_in_int(2)(0)(3)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(3)  ), .I2 (\pix_in_int(0)(0)(3)  )) ;
+# Info:          defparam clut_0_3_1_184.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_3_1_186 (.O (nx51816z2), .CI (nx20164z1), .LI (nx20164z2)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_4" *)
+# Info:     LUT4 slut_0_4_1_187 (.O (nx15972z2), .I0 (\pix_in_int(2)(0)(4)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(4)  ), .I2 (\pix_in_int(0)(0)(4)  ), .I3 (nx50327z1)
+# Info:          ) ;
+# Info:          defparam slut_0_4_1_187.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_4" *)
+# Info:     LUT3 clut_0_4_1_188 (.O (nx14191z1), .I0 (\pix_in_int(2)(0)(4)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(4)  ), .I2 (\pix_in_int(0)(0)(4)  )) ;
+# Info:          defparam clut_0_4_1_188.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_4_1_190 (.O (nx16669z2), .CI (nx15972z1), .LI (nx15972z2)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_5" *)
+# Info:     LUT4 slut_0_5_1_191 (.O (nx51121z2), .I0 (\pix_in_int(2)(0)(5)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(5)  ), .I2 (\pix_in_int(0)(0)(5)  ), .I3 (nx14191z1)
+# Info:          ) ;
+# Info:          defparam slut_0_5_1_191.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_5" *)
+# Info:     LUT3 clut_0_5_1_192 (.O (nx20958z1), .I0 (\pix_in_int(2)(0)(5)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(5)  ), .I2 (\pix_in_int(0)(0)(5)  )) ;
+# Info:          defparam clut_0_5_1_192.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_5_1_194 (.O (nx19465z2), .CI (nx51121z1), .LI (nx51121z2)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_6" *)
+# Info:     LUT4 slut_0_6_1_195 (.O (nx44802z2), .I0 (\pix_in_int(2)(0)(6)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(6)  ), .I2 (\pix_in_int(0)(0)(6)  ), .I3 (nx20958z1)
+# Info:          ) ;
+# Info:          defparam slut_0_6_1_195.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_6" *)
+# Info:     LUT3 clut_0_6_1_196 (.O (nx56107z1), .I0 (\pix_in_int(2)(0)(6)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(6)  ), .I2 (\pix_in_int(0)(0)(6)  )) ;
+# Info:          defparam clut_0_6_1_196.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_6_1_198 (.O (nx54612z2), .CI (nx44802z1), .LI (nx44802z2)) ;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_7" *)
+# Info:     LUT4 slut_0_7_1_199 (.O (nx7667z2), .I0 (\pix_in_int(2)(0)(7)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(7)  ), .I2 (\pix_in_int(0)(0)(7)  ), .I3 (nx56107z1)
+# Info:          ) ;
+# Info:          defparam slut_0_7_1_199.INIT = 16'h6996;
+# Info:     (* HLUTNM = "modgen_adderblock_1_3_slut_0_7" *)
+# Info:     LUT3 clut_0_7_1_200 (.O (nx62627z3), .I0 (\pix_in_int(2)(0)(7)  ), .I1 (
+# Info:          \pix_in_int(3)(0)(7)  ), .I2 (\pix_in_int(0)(0)(7)  )) ;
+# Info:          defparam clut_0_7_1_200.INIT = 8'hE8;
+# Info:     XORCY xorcy_0_7_1_202 (.O (nx41313z2), .CI (nx7667z1), .LI (nx7667z2)) ;
+# Info:     XORCY xorcy_0_9_1_206 (.O (nx6166z2), .CI (nx62627z1), .LI (nx62627z2)) ;
+# Info:     XORCY xorcy_0_9_1_0_1_208 (.O (nx6933z3), .CI (nx28716z1), .LI (nx8473z1)) ;
+# Info:     XORCY xorcy_2_1_213 (.O (\pix_out(0)_1_0(0)  ), .CI (nx44109z1), .LI (
+# Info:           nx44109z3)) ;
+# Info:     XORCY xorcy_3_1_215 (.O (\pix_out(0)_1_0(1)  ), .CI (nx51816z1), .LI (
+# Info:           nx51816z3)) ;
+# Info:     XORCY xorcy_4_1_217 (.O (\pix_out(0)_1_0(2)  ), .CI (nx16669z1), .LI (
+# Info:           nx16669z3)) ;
+# Info:     XORCY xorcy_5_1_219 (.O (\pix_out(0)_1_0(3)  ), .CI (nx19465z1), .LI (
+# Info:           nx19465z3)) ;
+# Info:     XORCY xorcy_6_1_221 (.O (\pix_out(0)_1_0(4)  ), .CI (nx54612z1), .LI (
+# Info:           nx54612z3)) ;
+# Info:     XORCY xorcy_7_1_223 (.O (\pix_out(0)_1_0(5)  ), .CI (nx41313z1), .LI (
+# Info:           nx41313z3)) ;
+# Info:     XORCY xorcy_8_1_225 (.O (\pix_out(0)_1_0(6)  ), .CI (nx6166z1), .LI (
+# Info:           nx6166z3)) ;
+# Info:     XORCY xorcy_9_1_227 (.O (\pix_out(0)_1_0(7)  ), .CI (nx6933z1), .LI (
+# Info:           nx6933z2)) ;
 # Info:     OBUF \pix_out_obuf(0)(0)  (.O (\pix_out(0) [0]), .I (\pix_out(0)_1_0(0)  )
 # Info:          ) ;
 # Info:     OBUF \pix_out_obuf(0)(1)  (.O (\pix_out(0) [1]), .I (\pix_out(0)_1_0(1)  )
@@ -1103,22 +1210,22 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info:          ) ;
 # Info:     OBUF \pix_out_obuf(3)(7)  (.O (\pix_out(3) [7]), .I (\pix_out(3)_1_0(7)  )
 # Info:          ) ;
-# Info:     OBUFT \pix_out(4)_triBus1(0)  (.O (\pix_out(4) [0]), .I (nx8473z1), .T (
-# Info:           nx8473z4)) ;
-# Info:     OBUFT \pix_out(4)_triBus1(1)  (.O (\pix_out(4) [1]), .I (nx8473z1), .T (
-# Info:           nx8473z4)) ;
-# Info:     OBUFT \pix_out(4)_triBus1(2)  (.O (\pix_out(4) [2]), .I (nx8473z1), .T (
-# Info:           nx8473z4)) ;
-# Info:     OBUFT \pix_out(4)_triBus1(3)  (.O (\pix_out(4) [3]), .I (nx8473z1), .T (
-# Info:           nx8473z4)) ;
-# Info:     OBUFT \pix_out(4)_triBus1(4)  (.O (\pix_out(4) [4]), .I (nx8473z1), .T (
-# Info:           nx8473z4)) ;
-# Info:     OBUFT \pix_out(4)_triBus1(5)  (.O (\pix_out(4) [5]), .I (nx8473z1), .T (
-# Info:           nx8473z4)) ;
-# Info:     OBUFT \pix_out(4)_triBus1(6)  (.O (\pix_out(4) [6]), .I (nx8473z1), .T (
-# Info:           nx8473z4)) ;
-# Info:     OBUFT \pix_out(4)_triBus1(7)  (.O (\pix_out(4) [7]), .I (nx8473z1), .T (
-# Info:           nx8473z4)) ;
+# Info:     OBUF \pix_out_obuf(4)(0)  (.O (\pix_out(4) [0]), .I (\pix_out(4)_1_0(0)  )
+# Info:          ) ;
+# Info:     OBUF \pix_out_obuf(4)(1)  (.O (\pix_out(4) [1]), .I (\pix_out(4)_1_0(1)  )
+# Info:          ) ;
+# Info:     OBUF \pix_out_obuf(4)(2)  (.O (\pix_out(4) [2]), .I (\pix_out(4)_1_0(2)  )
+# Info:          ) ;
+# Info:     OBUF \pix_out_obuf(4)(3)  (.O (\pix_out(4) [3]), .I (\pix_out(4)_1_0(3)  )
+# Info:          ) ;
+# Info:     OBUF \pix_out_obuf(4)(4)  (.O (\pix_out(4) [4]), .I (\pix_out(4)_1_0(4)  )
+# Info:          ) ;
+# Info:     OBUF \pix_out_obuf(4)(5)  (.O (\pix_out(4) [5]), .I (\pix_out(4)_1_0(5)  )
+# Info:          ) ;
+# Info:     OBUF \pix_out_obuf(4)(6)  (.O (\pix_out(4) [6]), .I (\pix_out(4)_1_0(6)  )
+# Info:          ) ;
+# Info:     OBUF \pix_out_obuf(4)(7)  (.O (\pix_out(4) [7]), .I (\pix_out(4)_1_0(7)  )
+# Info:          ) ;
 # Info:     IBUF \pix_in_ibuf(0)(0)(0)  (.O (\pix_in_int(0)(0)(0)  ), .I (
 # Info:          \pix_in(0)(0) [0])) ;
 # Info:     IBUF \pix_in_ibuf(0)(0)(1)  (.O (\pix_in_int(0)(0)(1)  ), .I (
@@ -1183,6 +1290,22 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info:          \pix_in(0)(3) [6])) ;
 # Info:     IBUF \pix_in_ibuf(0)(3)(7)  (.O (\pix_in_int(0)(3)(7)  ), .I (
 # Info:          \pix_in(0)(3) [7])) ;
+# Info:     IBUF \pix_in_ibuf(0)(4)(0)  (.O (\pix_in_int(0)(4)(0)  ), .I (
+# Info:          \pix_in(0)(4) [0])) ;
+# Info:     IBUF \pix_in_ibuf(0)(4)(1)  (.O (\pix_in_int(0)(4)(1)  ), .I (
+# Info:          \pix_in(0)(4) [1])) ;
+# Info:     IBUF \pix_in_ibuf(0)(4)(2)  (.O (\pix_in_int(0)(4)(2)  ), .I (
+# Info:          \pix_in(0)(4) [2])) ;
+# Info:     IBUF \pix_in_ibuf(0)(4)(3)  (.O (\pix_in_int(0)(4)(3)  ), .I (
+# Info:          \pix_in(0)(4) [3])) ;
+# Info:     IBUF \pix_in_ibuf(0)(4)(4)  (.O (\pix_in_int(0)(4)(4)  ), .I (
+# Info:          \pix_in(0)(4) [4])) ;
+# Info:     IBUF \pix_in_ibuf(0)(4)(5)  (.O (\pix_in_int(0)(4)(5)  ), .I (
+# Info:          \pix_in(0)(4) [5])) ;
+# Info:     IBUF \pix_in_ibuf(0)(4)(6)  (.O (\pix_in_int(0)(4)(6)  ), .I (
+# Info:          \pix_in(0)(4) [6])) ;
+# Info:     IBUF \pix_in_ibuf(0)(4)(7)  (.O (\pix_in_int(0)(4)(7)  ), .I (
+# Info:          \pix_in(0)(4) [7])) ;
 # Info:     IBUF \pix_in_ibuf(1)(0)(0)  (.O (\pix_in_int(1)(0)(0)  ), .I (
 # Info:          \pix_in(1)(0) [0])) ;
 # Info:     IBUF \pix_in_ibuf(1)(0)(1)  (.O (\pix_in_int(1)(0)(1)  ), .I (
@@ -1247,6 +1370,22 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info:          \pix_in(1)(3) [6])) ;
 # Info:     IBUF \pix_in_ibuf(1)(3)(7)  (.O (\pix_in_int(1)(3)(7)  ), .I (
 # Info:          \pix_in(1)(3) [7])) ;
+# Info:     IBUF \pix_in_ibuf(1)(4)(0)  (.O (\pix_in_int(1)(4)(0)  ), .I (
+# Info:          \pix_in(1)(4) [0])) ;
+# Info:     IBUF \pix_in_ibuf(1)(4)(1)  (.O (\pix_in_int(1)(4)(1)  ), .I (
+# Info:          \pix_in(1)(4) [1])) ;
+# Info:     IBUF \pix_in_ibuf(1)(4)(2)  (.O (\pix_in_int(1)(4)(2)  ), .I (
+# Info:          \pix_in(1)(4) [2])) ;
+# Info:     IBUF \pix_in_ibuf(1)(4)(3)  (.O (\pix_in_int(1)(4)(3)  ), .I (
+# Info:          \pix_in(1)(4) [3])) ;
+# Info:     IBUF \pix_in_ibuf(1)(4)(4)  (.O (\pix_in_int(1)(4)(4)  ), .I (
+# Info:          \pix_in(1)(4) [4])) ;
+# Info:     IBUF \pix_in_ibuf(1)(4)(5)  (.O (\pix_in_int(1)(4)(5)  ), .I (
+# Info:          \pix_in(1)(4) [5])) ;
+# Info:     IBUF \pix_in_ibuf(1)(4)(6)  (.O (\pix_in_int(1)(4)(6)  ), .I (
+# Info:          \pix_in(1)(4) [6])) ;
+# Info:     IBUF \pix_in_ibuf(1)(4)(7)  (.O (\pix_in_int(1)(4)(7)  ), .I (
+# Info:          \pix_in(1)(4) [7])) ;
 # Info:     IBUF \pix_in_ibuf(2)(0)(0)  (.O (\pix_in_int(2)(0)(0)  ), .I (
 # Info:          \pix_in(2)(0) [0])) ;
 # Info:     IBUF \pix_in_ibuf(2)(0)(1)  (.O (\pix_in_int(2)(0)(1)  ), .I (
@@ -1311,6 +1450,22 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info:          \pix_in(2)(3) [6])) ;
 # Info:     IBUF \pix_in_ibuf(2)(3)(7)  (.O (\pix_in_int(2)(3)(7)  ), .I (
 # Info:          \pix_in(2)(3) [7])) ;
+# Info:     IBUF \pix_in_ibuf(2)(4)(0)  (.O (\pix_in_int(2)(4)(0)  ), .I (
+# Info:          \pix_in(2)(4) [0])) ;
+# Info:     IBUF \pix_in_ibuf(2)(4)(1)  (.O (\pix_in_int(2)(4)(1)  ), .I (
+# Info:          \pix_in(2)(4) [1])) ;
+# Info:     IBUF \pix_in_ibuf(2)(4)(2)  (.O (\pix_in_int(2)(4)(2)  ), .I (
+# Info:          \pix_in(2)(4) [2])) ;
+# Info:     IBUF \pix_in_ibuf(2)(4)(3)  (.O (\pix_in_int(2)(4)(3)  ), .I (
+# Info:          \pix_in(2)(4) [3])) ;
+# Info:     IBUF \pix_in_ibuf(2)(4)(4)  (.O (\pix_in_int(2)(4)(4)  ), .I (
+# Info:          \pix_in(2)(4) [4])) ;
+# Info:     IBUF \pix_in_ibuf(2)(4)(5)  (.O (\pix_in_int(2)(4)(5)  ), .I (
+# Info:          \pix_in(2)(4) [5])) ;
+# Info:     IBUF \pix_in_ibuf(2)(4)(6)  (.O (\pix_in_int(2)(4)(6)  ), .I (
+# Info:          \pix_in(2)(4) [6])) ;
+# Info:     IBUF \pix_in_ibuf(2)(4)(7)  (.O (\pix_in_int(2)(4)(7)  ), .I (
+# Info:          \pix_in(2)(4) [7])) ;
 # Info:     IBUF \pix_in_ibuf(3)(0)(0)  (.O (\pix_in_int(3)(0)(0)  ), .I (
 # Info:          \pix_in(3)(0) [0])) ;
 # Info:     IBUF \pix_in_ibuf(3)(0)(1)  (.O (\pix_in_int(3)(0)(1)  ), .I (
@@ -1359,14 +1514,38 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info:          \pix_in(3)(2) [6])) ;
 # Info:     IBUF \pix_in_ibuf(3)(2)(7)  (.O (\pix_in_int(3)(2)(7)  ), .I (
 # Info:          \pix_in(3)(2) [7])) ;
-# Info:     IBUF \pix_in_ibuf(3)(3)(0)  (.O (pix_in_int[0]), .I (\pix_in(3)(3) [0])) ;
-# Info:     IBUF \pix_in_ibuf(3)(3)(1)  (.O (pix_in_int[1]), .I (\pix_in(3)(3) [1])) ;
-# Info:     IBUF \pix_in_ibuf(3)(3)(2)  (.O (pix_in_int[2]), .I (\pix_in(3)(3) [2])) ;
-# Info:     IBUF \pix_in_ibuf(3)(3)(3)  (.O (pix_in_int[3]), .I (\pix_in(3)(3) [3])) ;
-# Info:     IBUF \pix_in_ibuf(3)(3)(4)  (.O (pix_in_int[4]), .I (\pix_in(3)(3) [4])) ;
-# Info:     IBUF \pix_in_ibuf(3)(3)(5)  (.O (pix_in_int[5]), .I (\pix_in(3)(3) [5])) ;
-# Info:     IBUF \pix_in_ibuf(3)(3)(6)  (.O (pix_in_int[6]), .I (\pix_in(3)(3) [6])) ;
-# Info:     IBUF \pix_in_ibuf(3)(3)(7)  (.O (pix_in_int[7]), .I (\pix_in(3)(3) [7])) ;
+# Info:     IBUF \pix_in_ibuf(3)(3)(0)  (.O (\pix_in_int(3)(3)(0)  ), .I (
+# Info:          \pix_in(3)(3) [0])) ;
+# Info:     IBUF \pix_in_ibuf(3)(3)(1)  (.O (\pix_in_int(3)(3)(1)  ), .I (
+# Info:          \pix_in(3)(3) [1])) ;
+# Info:     IBUF \pix_in_ibuf(3)(3)(2)  (.O (\pix_in_int(3)(3)(2)  ), .I (
+# Info:          \pix_in(3)(3) [2])) ;
+# Info:     IBUF \pix_in_ibuf(3)(3)(3)  (.O (\pix_in_int(3)(3)(3)  ), .I (
+# Info:          \pix_in(3)(3) [3])) ;
+# Info:     IBUF \pix_in_ibuf(3)(3)(4)  (.O (\pix_in_int(3)(3)(4)  ), .I (
+# Info:          \pix_in(3)(3) [4])) ;
+# Info:     IBUF \pix_in_ibuf(3)(3)(5)  (.O (\pix_in_int(3)(3)(5)  ), .I (
+# Info:          \pix_in(3)(3) [5])) ;
+# Info:     IBUF \pix_in_ibuf(3)(3)(6)  (.O (\pix_in_int(3)(3)(6)  ), .I (
+# Info:          \pix_in(3)(3) [6])) ;
+# Info:     IBUF \pix_in_ibuf(3)(3)(7)  (.O (\pix_in_int(3)(3)(7)  ), .I (
+# Info:          \pix_in(3)(3) [7])) ;
+# Info:     IBUF \pix_in_ibuf(3)(4)(0)  (.O (pix_in_int[0]), .I (\pix_in(3)(4) [0])) ;
+# Info:     IBUF \pix_in_ibuf(3)(4)(1)  (.O (pix_in_int[1]), .I (\pix_in(3)(4) [1])) ;
+# Info:     IBUF \pix_in_ibuf(3)(4)(2)  (.O (pix_in_int[2]), .I (\pix_in(3)(4) [2])) ;
+# Info:     IBUF \pix_in_ibuf(3)(4)(3)  (.O (pix_in_int[3]), .I (\pix_in(3)(4) [3])) ;
+# Info:     IBUF \pix_in_ibuf(3)(4)(4)  (.O (pix_in_int[4]), .I (\pix_in(3)(4) [4])) ;
+# Info:     IBUF \pix_in_ibuf(3)(4)(5)  (.O (pix_in_int[5]), .I (\pix_in(3)(4) [5])) ;
+# Info:     IBUF \pix_in_ibuf(3)(4)(6)  (.O (pix_in_int[6]), .I (\pix_in(3)(4) [6])) ;
+# Info:     IBUF \pix_in_ibuf(3)(4)(7)  (.O (pix_in_int[7]), .I (\pix_in(3)(4) [7])) ;
+# Info:     LUT3 ix6933z1419 (.O (nx6933z2), .I0 (nx8473z1), .I1 (nx8473z4), .I2 (
+# Info:          nx6933z3)) ;
+# Info:          defparam ix6933z1419.INIT = 8'h69;
+# Info:     LUT3 ix6166z1419 (.O (nx6166z3), .I0 (nx8473z1), .I1 (nx8473z4), .I2 (
+# Info:          nx6166z2)) ;
+# Info:          defparam ix6166z1419.INIT = 8'h69;
+# Info:     LUT2 ix62627z1320 (.O (nx62627z2), .I0 (nx8473z1), .I1 (nx62627z3)) ;
+# Info:          defparam ix62627z1320.INIT = 4'h6;
 # Info:     LUT3 ix12924z1419 (.O (nx12924z2), .I0 (nx8473z1), .I1 (nx8473z4), .I2 (
 # Info:          nx12924z3)) ;
 # Info:          defparam ix12924z1419.INIT = 8'h69;
@@ -1399,101 +1578,125 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info:          defparam ix8481z1419.INIT = 8'h69;
 # Info:     LUT2 ix50036z1320 (.O (nx50036z2), .I0 (nx8473z1), .I1 (nx50036z3)) ;
 # Info:          defparam ix50036z1320.INIT = 4'h6;
-# Info:     LUT3 ix48291z1419 (.O (nx48291z3), .I0 (nx8473z4), .I1 (nx48291z2), .I2 (
+# Info:     LUT3 ix41313z1419 (.O (nx41313z3), .I0 (nx8473z4), .I1 (nx41313z2), .I2 (
 # Info:          \pix_in_int(1)(0)(7)  )) ;
+# Info:          defparam ix41313z1419.INIT = 8'h69;
+# Info:     LUT3 ix54612z1419 (.O (nx54612z3), .I0 (nx8473z4), .I1 (nx54612z2), .I2 (
+# Info:          \pix_in_int(1)(0)(6)  )) ;
+# Info:          defparam ix54612z1419.INIT = 8'h69;
+# Info:     LUT3 ix19465z1419 (.O (nx19465z3), .I0 (nx8473z4), .I1 (nx19465z2), .I2 (
+# Info:          \pix_in_int(1)(0)(5)  )) ;
+# Info:          defparam ix19465z1419.INIT = 8'h69;
+# Info:     LUT3 ix16669z1419 (.O (nx16669z3), .I0 (nx8473z4), .I1 (nx16669z2), .I2 (
+# Info:          \pix_in_int(1)(0)(4)  )) ;
+# Info:          defparam ix16669z1419.INIT = 8'h69;
+# Info:     LUT3 ix51816z1419 (.O (nx51816z3), .I0 (nx8473z4), .I1 (nx51816z2), .I2 (
+# Info:          \pix_in_int(1)(0)(3)  )) ;
+# Info:          defparam ix51816z1419.INIT = 8'h69;
+# Info:     LUT3 ix44109z1419 (.O (nx44109z3), .I0 (nx8473z4), .I1 (nx44109z2), .I2 (
+# Info:          \pix_in_int(1)(0)(2)  )) ;
+# Info:          defparam ix44109z1419.INIT = 8'h69;
+# Info:     LUT3 ix8962z1419 (.O (nx8962z3), .I0 (nx8473z4), .I1 (nx8962z2), .I2 (
+# Info:          \pix_in_int(1)(0)(1)  )) ;
+# Info:          defparam ix8962z1419.INIT = 8'h69;
+# Info:     LUT3 ix26185z1420 (.O (nx26185z3), .I0 (nx8473z4), .I1 (nx26185z2), .I2 (
+# Info:          \pix_in_int(1)(0)(0)  )) ;
+# Info:          defparam ix26185z1420.INIT = 8'h69;
+# Info:     LUT3 ix48291z1419 (.O (nx48291z3), .I0 (nx8473z4), .I1 (nx48291z2), .I2 (
+# Info:          \pix_in_int(1)(1)(7)  )) ;
 # Info:          defparam ix48291z1419.INIT = 8'h69;
 # Info:     LUT3 ix47634z1419 (.O (nx47634z3), .I0 (nx8473z4), .I1 (nx47634z2), .I2 (
-# Info:          \pix_in_int(1)(0)(6)  )) ;
+# Info:          \pix_in_int(1)(1)(6)  )) ;
 # Info:          defparam ix47634z1419.INIT = 8'h69;
 # Info:     LUT3 ix12487z1419 (.O (nx12487z3), .I0 (nx8473z4), .I1 (nx12487z2), .I2 (
-# Info:          \pix_in_int(1)(0)(5)  )) ;
+# Info:          \pix_in_int(1)(1)(5)  )) ;
 # Info:          defparam ix12487z1419.INIT = 8'h69;
 # Info:     LUT3 ix22660z1419 (.O (nx22660z3), .I0 (nx8473z4), .I1 (nx22660z2), .I2 (
-# Info:          \pix_in_int(1)(0)(4)  )) ;
+# Info:          \pix_in_int(1)(1)(4)  )) ;
 # Info:          defparam ix22660z1419.INIT = 8'h69;
 # Info:     LUT3 ix58794z1419 (.O (nx58794z3), .I0 (nx8473z4), .I1 (nx58794z2), .I2 (
-# Info:          \pix_in_int(1)(0)(3)  )) ;
+# Info:          \pix_in_int(1)(1)(3)  )) ;
 # Info:          defparam ix58794z1419.INIT = 8'h69;
 # Info:     LUT3 ix37131z1419 (.O (nx37131z3), .I0 (nx8473z4), .I1 (nx37131z2), .I2 (
-# Info:          \pix_in_int(1)(0)(2)  )) ;
+# Info:          \pix_in_int(1)(1)(2)  )) ;
 # Info:          defparam ix37131z1419.INIT = 8'h69;
 # Info:     LUT3 ix1984z1419 (.O (nx1984z3), .I0 (nx8473z4), .I1 (nx1984z2), .I2 (
-# Info:          \pix_in_int(1)(0)(1)  )) ;
+# Info:          \pix_in_int(1)(1)(1)  )) ;
 # Info:          defparam ix1984z1419.INIT = 8'h69;
 # Info:     LUT3 ix33163z1420 (.O (nx33163z3), .I0 (nx8473z4), .I1 (nx33163z2), .I2 (
-# Info:          \pix_in_int(1)(0)(0)  )) ;
+# Info:          \pix_in_int(1)(1)(0)  )) ;
 # Info:          defparam ix33163z1420.INIT = 8'h69;
 # Info:     LUT3 ix53283z1419 (.O (nx53283z3), .I0 (nx8473z4), .I1 (nx53283z2), .I2 (
-# Info:          \pix_in_int(1)(1)(7)  )) ;
+# Info:          \pix_in_int(1)(2)(7)  )) ;
 # Info:          defparam ix53283z1419.INIT = 8'h69;
 # Info:     LUT3 ix41655z1419 (.O (nx41655z3), .I0 (nx8473z4), .I1 (nx41655z2), .I2 (
-# Info:          \pix_in_int(1)(1)(6)  )) ;
+# Info:          \pix_in_int(1)(2)(6)  )) ;
 # Info:          defparam ix41655z1419.INIT = 8'h69;
 # Info:     LUT3 ix6508z1419 (.O (nx6508z3), .I0 (nx8473z4), .I1 (nx6508z2), .I2 (
-# Info:          \pix_in_int(1)(1)(5)  )) ;
+# Info:          \pix_in_int(1)(2)(5)  )) ;
 # Info:          defparam ix6508z1419.INIT = 8'h69;
 # Info:     LUT3 ix28639z1419 (.O (nx28639z3), .I0 (nx8473z4), .I1 (nx28639z2), .I2 (
-# Info:          \pix_in_int(1)(1)(4)  )) ;
+# Info:          \pix_in_int(1)(2)(4)  )) ;
 # Info:          defparam ix28639z1419.INIT = 8'h69;
 # Info:     LUT3 ix63786z1419 (.O (nx63786z3), .I0 (nx8473z4), .I1 (nx63786z2), .I2 (
-# Info:          \pix_in_int(1)(1)(3)  )) ;
+# Info:          \pix_in_int(1)(2)(3)  )) ;
 # Info:          defparam ix63786z1419.INIT = 8'h69;
 # Info:     LUT3 ix32139z1419 (.O (nx32139z3), .I0 (nx8473z4), .I1 (nx32139z2), .I2 (
-# Info:          \pix_in_int(1)(1)(2)  )) ;
+# Info:          \pix_in_int(1)(2)(2)  )) ;
 # Info:          defparam ix32139z1419.INIT = 8'h69;
 # Info:     LUT3 ix55846z1419 (.O (nx55846z3), .I0 (nx8473z4), .I1 (nx55846z2), .I2 (
-# Info:          \pix_in_int(1)(1)(1)  )) ;
+# Info:          \pix_in_int(1)(2)(1)  )) ;
 # Info:          defparam ix55846z1419.INIT = 8'h69;
 # Info:     LUT3 ix48061z1420 (.O (nx48061z3), .I0 (nx8473z4), .I1 (nx48061z2), .I2 (
-# Info:          \pix_in_int(1)(1)(0)  )) ;
+# Info:          \pix_in_int(1)(2)(0)  )) ;
 # Info:          defparam ix48061z1420.INIT = 8'h69;
 # Info:     LUT3 ix24511z1419 (.O (nx24511z3), .I0 (nx8473z4), .I1 (nx24511z2), .I2 (
-# Info:          \pix_in_int(1)(2)(7)  )) ;
+# Info:          \pix_in_int(1)(3)(7)  )) ;
 # Info:          defparam ix24511z1419.INIT = 8'h69;
 # Info:     LUT3 ix32296z1419 (.O (nx32296z3), .I0 (nx8473z4), .I1 (nx32296z2), .I2 (
-# Info:          \pix_in_int(1)(2)(6)  )) ;
+# Info:          \pix_in_int(1)(3)(6)  )) ;
 # Info:          defparam ix32296z1419.INIT = 8'h69;
 # Info:     LUT3 ix39094z1419 (.O (nx39094z3), .I0 (nx8473z4), .I1 (nx39094z2), .I2 (
-# Info:          \pix_in_int(1)(2)(5)  )) ;
+# Info:          \pix_in_int(1)(3)(5)  )) ;
 # Info:          defparam ix39094z1419.INIT = 8'h69;
 # Info:     LUT3 ix46879z1419 (.O (nx46879z3), .I0 (nx8473z4), .I1 (nx46879z2), .I2 (
-# Info:          \pix_in_int(1)(2)(4)  )) ;
+# Info:          \pix_in_int(1)(3)(4)  )) ;
 # Info:          defparam ix46879z1419.INIT = 8'h69;
 # Info:     LUT3 ix54664z1419 (.O (nx54664z3), .I0 (nx8473z4), .I1 (nx54664z2), .I2 (
-# Info:          \pix_in_int(1)(2)(3)  )) ;
+# Info:          \pix_in_int(1)(3)(3)  )) ;
 # Info:          defparam ix54664z1419.INIT = 8'h69;
 # Info:     LUT3 ix3087z1419 (.O (nx3087z3), .I0 (nx8473z4), .I1 (nx3087z2), .I2 (
-# Info:          \pix_in_int(1)(2)(2)  )) ;
+# Info:          \pix_in_int(1)(3)(2)  )) ;
 # Info:          defparam ix3087z1419.INIT = 8'h69;
 # Info:     LUT3 ix60838z1419 (.O (nx60838z3), .I0 (nx8473z4), .I1 (nx60838z2), .I2 (
-# Info:          \pix_in_int(1)(2)(1)  )) ;
+# Info:          \pix_in_int(1)(3)(1)  )) ;
 # Info:          defparam ix60838z1419.INIT = 8'h69;
 # Info:     LUT3 ix54040z1420 (.O (nx54040z3), .I0 (nx8473z4), .I1 (nx54040z2), .I2 (
-# Info:          \pix_in_int(1)(2)(0)  )) ;
+# Info:          \pix_in_int(1)(3)(0)  )) ;
 # Info:          defparam ix54040z1420.INIT = 8'h69;
 # Info:     LUT3 ix8480z1419 (.O (nx8480z3), .I0 (nx8473z4), .I1 (nx8480z2), .I2 (
-# Info:          \pix_in_int(1)(3)(7)  )) ;
+# Info:          \pix_in_int(1)(4)(7)  )) ;
 # Info:          defparam ix8480z1419.INIT = 8'h69;
 # Info:     LUT3 ix8479z1419 (.O (nx8479z3), .I0 (nx8473z4), .I1 (nx8479z2), .I2 (
-# Info:          \pix_in_int(1)(3)(6)  )) ;
+# Info:          \pix_in_int(1)(4)(6)  )) ;
 # Info:          defparam ix8479z1419.INIT = 8'h69;
 # Info:     LUT3 ix8478z1419 (.O (nx8478z3), .I0 (nx8473z4), .I1 (nx8478z2), .I2 (
-# Info:          \pix_in_int(1)(3)(5)  )) ;
+# Info:          \pix_in_int(1)(4)(5)  )) ;
 # Info:          defparam ix8478z1419.INIT = 8'h69;
 # Info:     LUT3 ix8477z1419 (.O (nx8477z3), .I0 (nx8473z4), .I1 (nx8477z2), .I2 (
-# Info:          \pix_in_int(1)(3)(4)  )) ;
+# Info:          \pix_in_int(1)(4)(4)  )) ;
 # Info:          defparam ix8477z1419.INIT = 8'h69;
 # Info:     LUT3 ix8476z1419 (.O (nx8476z3), .I0 (nx8473z4), .I1 (nx8476z2), .I2 (
-# Info:          \pix_in_int(1)(3)(3)  )) ;
+# Info:          \pix_in_int(1)(4)(3)  )) ;
 # Info:          defparam ix8476z1419.INIT = 8'h69;
 # Info:     LUT3 ix8475z1419 (.O (nx8475z3), .I0 (nx8473z4), .I1 (nx8475z2), .I2 (
-# Info:          \pix_in_int(1)(3)(2)  )) ;
+# Info:          \pix_in_int(1)(4)(2)  )) ;
 # Info:          defparam ix8475z1419.INIT = 8'h69;
 # Info:     LUT3 ix8474z1419 (.O (nx8474z3), .I0 (nx8473z4), .I1 (nx8474z2), .I2 (
-# Info:          \pix_in_int(1)(3)(1)  )) ;
+# Info:          \pix_in_int(1)(4)(1)  )) ;
 # Info:          defparam ix8474z1419.INIT = 8'h69;
 # Info:     LUT3 ix8473z1420 (.O (nx8473z3), .I0 (nx8473z4), .I1 (nx8473z2), .I2 (
-# Info:          \pix_in_int(1)(3)(0)  )) ;
+# Info:          \pix_in_int(1)(4)(0)  )) ;
 # Info:          defparam ix8473z1420.INIT = 8'h69;
 # Info:     MUXCY muxcy_0_1 (.O (nx50043z1), .CI (nx8473z1), .DI (nx16719z1), .S (
 # Info:           nx50044z1)) ;
@@ -1631,6 +1834,40 @@ precision: Executing on platform: Derived from Red Hat Enterprise Linux 7.1 (Sou
 # Info:           nx48291z3)) ;
 # Info:     MUXCY muxcy_8_1_169 (.O (nx12924z1), .CI (nx13144z1), .DI (nx13144z2), .S (
 # Info:           nx13144z3)) ;
+# Info:     MUXCY muxcy_0_1_1_177 (.O (nx55313z1), .CI (nx8473z1), .DI (nx25689z1), .S (
+# Info:           nx39623z1)) ;
+# Info:     MUXCY muxcy_0_2_1_181 (.O (nx20164z1), .CI (nx55313z1), .DI (nx9460z1), .S (
+# Info:           nx55313z2)) ;
+# Info:     MUXCY muxcy_0_3_1_185 (.O (nx15972z1), .CI (nx20164z1), .DI (nx45596z1), .S (
+# Info:           nx20164z2)) ;
+# Info:     MUXCY muxcy_0_4_1_189 (.O (nx51121z1), .CI (nx15972z1), .DI (nx50327z1), .S (
+# Info:           nx15972z2)) ;
+# Info:     MUXCY muxcy_0_5_1_193 (.O (nx44802z1), .CI (nx51121z1), .DI (nx14191z1), .S (
+# Info:           nx51121z2)) ;
+# Info:     MUXCY muxcy_0_6_1_197 (.O (nx7667z1), .CI (nx44802z1), .DI (nx20958z1), .S (
+# Info:           nx44802z2)) ;
+# Info:     MUXCY muxcy_0_7_1_201 (.O (nx62627z1), .CI (nx7667z1), .DI (nx56107z1), .S (
+# Info:           nx7667z2)) ;
+# Info:     MUXCY muxcy_0_9_1_205 (.O (nx28716z1), .CI (nx62627z1), .DI (nx62627z3), .S (
+# Info:           nx62627z2)) ;
+# Info:     MUXCY muxcy_0_1_210 (.O (nx8962z1), .CI (nx8473z1), .DI (nx26185z2), .S (
+# Info:           nx26185z3)) ;
+# Info:     MUXCY muxcy_1_1_212 (.O (nx44109z1), .CI (nx8962z1), .DI (nx8962z2), .S (
+# Info:           nx8962z3)) ;
+# Info:     MUXCY muxcy_2_1_214 (.O (nx51816z1), .CI (nx44109z1), .DI (nx44109z2), .S (
+# Info:           nx44109z3)) ;
+# Info:     MUXCY muxcy_3_1_216 (.O (nx16669z1), .CI (nx51816z1), .DI (nx51816z2), .S (
+# Info:           nx51816z3)) ;
+# Info:     MUXCY muxcy_4_1_218 (.O (nx19465z1), .CI (nx16669z1), .DI (nx16669z2), .S (
+# Info:           nx16669z3)) ;
+# Info:     MUXCY muxcy_5_1_220 (.O (nx54612z1), .CI (nx19465z1), .DI (nx19465z2), .S (
+# Info:           nx19465z3)) ;
+# Info:     MUXCY muxcy_6_1_222 (.O (nx41313z1), .CI (nx54612z1), .DI (nx54612z2), .S (
+# Info:           nx54612z3)) ;
+# Info:     MUXCY muxcy_7_1_224 (.O (nx6166z1), .CI (nx41313z1), .DI (nx41313z2), .S (
+# Info:           nx41313z3)) ;
+# Info:     MUXCY muxcy_8_1_226 (.O (nx6933z1), .CI (nx6166z1), .DI (nx6166z2), .S (
+# Info:           nx6166z3)) ;
 # Info: endmodule
 Creating result.zip...
   adding: precision.xdc (deflated 79%)
@@ -1708,5 +1945,5 @@ Creating result.zip...
   adding: .bash_logout (stored 0%)
   adding: .bashrc (deflated 23%)
   adding: .bash_profile (deflated 21%)
-[2020-11-22 14:45:52 EST] Waiting for download...
+[2020-11-25 17:49:35 EST] Waiting for download...
 Done
