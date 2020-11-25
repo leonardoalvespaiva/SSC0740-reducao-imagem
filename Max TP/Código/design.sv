@@ -6,7 +6,7 @@ module redux_paralelo(
   genvar i;
   
   generate
-    for (i=0; i<4; i=i+1) begin : redux1
+    for (i=0; i<5; i=i+1) begin : redux1
       always @ (pix_in[0][i] or pix_in[1][i] or pix_in[2][i] or pix_in[3][i]) begin
         pix_out[i] <= (pix_in[0][i] + pix_in[1][i] + pix_in[2][i] + pix_in[3][i]) / 4;
       end //end always
